@@ -1,0 +1,188 @@
+﻿@model ModelClasses.ViewModels.OrderViewModel
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<div class="container wrapper">
+    <div class="row cart-head">
+        <div class="container">
+            <div class="row">
+                <p></p>
+            </div>
+            <div class="row">
+                <div style="display: table; margin: auto;">
+                    <span class="step step_complete"> <a href="#" class="check-bc">Cart</a> <span class="step_line step_complete"> </span> <span class="step_line backline"> </span> </span>
+                    <span class="step step_complete"> <a href="#" class="check-bc">Checkout</a> <span class="step_line "> </span> <span class="step_line step_complete"> </span> </span>
+                    <span class="step_thankyou check-bc step_complete">Thank you</span>
+                </div>
+            </div>
+            <div class="row">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="row cart-body">
+        <form class="form-horizontal" method="post" asp-controller="Order" asp-action="OrderDone">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-md-push-6 col-sm-push-6">
+                <!--REVIEW ORDER-->
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        Review Order
+                        <div class="pull-right"><small><a class="afix-1" href="#">Edit Cart</a></small></div>
+                    </div>
+                    <div class="panel-body">
+                        @{
+                            decimal total = 0.0m;
+                        }
+                        @foreach (var item in Model.UserCartList)
+                        {
+                            <div class="form-group">
+                                @if (item.Product.ImgUrls != null && item.Product.ImgUrls.Any())
+                                {
+                                    <div class="col-sm-3 col-xs-3">
+                                        <img class="img-responsive" src="@Url.Content("~/Images/" + item.Product.ImgUrls.First().ImageUrl)" />
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="col-sm-3 col-xs-3">
+                                        <img class="img-responsive" src="https://via.placeholder.com/150" alt="No Image" />
+                                    </div>
+                                }
+
+                                <div class="col-sm-6 col-xs-6">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="col-xs-8">
+                                            <div>@item.Product.Name</div>
+                                            <div><small>Quantity: <span>@item.quantity</span></small></div>
+                                        </div>
+
+                                        @{
+                                            decimal SubTotal = item.Product.Price * item.quantity;
+                                            total += SubTotal;
+                                        }
+                                        <div class="col-xs-4 text-right">
+                                            <small>$:<span>@item.Product.Price</span></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group"><hr /></div>
+                        }
+
+                        <div class="form-group"><hr /></div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <strong>Subtotal</strong>
+                                <div class="pull-right"><span>$</span><span>@total</span></div>
+                            </div>
+                            <div class="col-xs-12">
+                                <small>Shipping</small>
+                                <div class="pull-right"><span>-</span></div>
+                            </div>
+                        </div>
+                        <div class="form-group"><hr /></div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <strong>Order Total</strong>
+                                <div class="pull-right"><span>$</span><span>@total</span></div> <!-- Show calculated total -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--REVIEW ORDER END-->
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-md-pull-6 col-sm-pull-6">
+                <!--SHIPPING METHOD-->
+                <div class="panel panel-info">
+                    <div class="panel-heading">Address</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <h4>Shipping Address</h4>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-xs-12">
+                                <label asp-for="UserOrderHeader.Name" class="control-label"><strong>Name:</strong></label>
+                                <input asp-for="UserOrderHeader.Name" class="form-control" />
+                                <span asp-validation-for="UserOrderHeader.Name" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label asp-for="UserOrderHeader.PhoneNumber" class="control-label"><strong>Phone Number:</strong></label>
+                                <input asp-for="UserOrderHeader.PhoneNumber" class="form-control" />
+                                <span asp-validation-for="UserOrderHeader.PhoneNumber" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label asp-for="UserOrderHeader.DeliveryStreetAddress" class="control-label"><strong>Address:</strong></label>
+                                <input asp-for="UserOrderHeader.DeliveryStreetAddress" class="form-control" />
+                                <span asp-validation-for="UserOrderHeader.DeliveryStreetAddress" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label asp-for="UserOrderHeader.CIty" class="control-label"><strong>City:</strong></label>
+                                <input asp-for="UserOrderHeader.CIty" class="form-control" />
+                                <span asp-validation-for="UserOrderHeader.CIty" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label asp-for="UserOrderHeader.State" class="control-label"></label>
+                                <input asp-for="UserOrderHeader.State" class="form-control" />
+                                <span asp-validation-for="UserOrderHeader.State" class="text-danger"></span>
+                            </div>
+                        </div>
+                      
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label asp-for="UserOrderHeader.PostalCode" class="control-label"><strong>Zip / Postal Code:</strong></label>
+                                <input asp-for="UserOrderHeader.PostalCode" class="form-control" />
+                                <span asp-validation-for="UserOrderHeader.PostalCode" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label asp-for="UserOrderHeader.DateOfOrder" class="control-label"> Date OF Order</label>
+                                <label asp-for="UserOrderHeader.DateOfOrder" class="form-control"><strong>@DateTime.Now.ToShortDateString()</strong></label>
+                                <span asp-validation-for="UserOrderHeader.DateOfOrder" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--SHIPPING METHOD END-->
+                <!--CREDIT CARD PAYMENT-->
+                <div class="panel panel-info">
+                    <div class="panel-heading"><span><i class="glyphicon glyphicon-lock"></i></span> Secure Payment</div>
+                    <div class="panel-body">
+                        
+                        <div class="form-group">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <label for="ChoosePaymentMethod" class="control-label"><strong>Payment Method:</strong></label>
+                                <select id="ChoosePaymentMethod" class="form-control">
+                                    <option value="0">Please Select</option>
+                                    <option value="1">Cash</option>
+                                    <option value="2">Credit</option>
+                                    <option value="3">Check</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input type="submit" value="Complete Order" class="btn btn-success btn-lg btn-block" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--CREDIT CARD PAYMENT END-->
+            </div>
+        </form>
+    </div>
+</div>

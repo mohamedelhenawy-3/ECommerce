@@ -1,0 +1,17 @@
+F:\ECommerceSolution\DataBaseAccess\bin\Debug\net8.0\DataBaseAccess.deps.json
+F:\ECommerceSolution\DataBaseAccess\bin\Debug\net8.0\DataBaseAccess.dll
+F:\ECommerceSolution\DataBaseAccess\bin\Debug\net8.0\DataBaseAccess.pdb
+F:\ECommerceSolution\DataBaseAccess\obj\Debug\net8.0\DataBaseAccess.GeneratedMSBuildEditorConfig.editorconfig
+F:\ECommerceSolution\DataBaseAccess\obj\Debug\net8.0\DataBaseAccess.AssemblyInfoInputs.cache
+F:\ECommerceSolution\DataBaseAccess\obj\Debug\net8.0\DataBaseAccess.AssemblyInfo.cs
+F:\ECommerceSolution\DataBaseAccess\obj\Debug\net8.0\DataBaseAccess.csproj.CoreCompileInputs.cache
+F:\ECommerceSolution\DataBaseAccess\obj\Debug\net8.0\DataBaseAccess.dll
+F:\ECommerceSolution\DataBaseAccess\obj\Debug\net8.0\refint\DataBaseAccess.dll
+F:\ECommerceSolution\DataBaseAccess\obj\Debug\net8.0\DataBaseAccess.pdb
+F:\ECommerceSolution\DataBaseAccess\obj\Debug\net8.0\ref\DataBaseAccess.dll
+F:\ECommerceSolution\DataBaseAccess\bin\Debug\net8.0\DataBaseAccess.runtimeconfig.json
+F:\ECommerceSolution\DataBaseAccess\bin\Debug\net8.0\ModelClasses.dll
+F:\ECommerceSolution\DataBaseAccess\bin\Debug\net8.0\ModelClasses.pdb
+F:\ECommerceSolution\DataBaseAccess\obj\Debug\net8.0\DataBaseAccess.csproj.AssemblyReference.cache
+F:\ECommerceSolution\DataBaseAccess\obj\Debug\net8.0\DataBase.3AAAA425.Up2Date
+F:\ECommerceSolution\DataBaseAccess\obj\Debug\net8.0\DataBaseAccess.genruntimeconfig.cache

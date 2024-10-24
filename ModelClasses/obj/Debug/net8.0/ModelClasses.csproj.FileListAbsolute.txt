@@ -1,0 +1,12 @@
+F:\ECommerceSolution\ModelClasses\bin\Debug\net8.0\ModelClasses.deps.json
+F:\ECommerceSolution\ModelClasses\bin\Debug\net8.0\ModelClasses.dll
+F:\ECommerceSolution\ModelClasses\bin\Debug\net8.0\ModelClasses.pdb
+F:\ECommerceSolution\ModelClasses\obj\Debug\net8.0\ModelClasses.GeneratedMSBuildEditorConfig.editorconfig
+F:\ECommerceSolution\ModelClasses\obj\Debug\net8.0\ModelClasses.AssemblyInfoInputs.cache
+F:\ECommerceSolution\ModelClasses\obj\Debug\net8.0\ModelClasses.AssemblyInfo.cs
+F:\ECommerceSolution\ModelClasses\obj\Debug\net8.0\ModelClasses.csproj.CoreCompileInputs.cache
+F:\ECommerceSolution\ModelClasses\obj\Debug\net8.0\ModelClasses.dll
+F:\ECommerceSolution\ModelClasses\obj\Debug\net8.0\refint\ModelClasses.dll
+F:\ECommerceSolution\ModelClasses\obj\Debug\net8.0\ModelClasses.pdb
+F:\ECommerceSolution\ModelClasses\obj\Debug\net8.0\ref\ModelClasses.dll
+F:\ECommerceSolution\ModelClasses\obj\Debug\net8.0\ModelClasses.csproj.AssemblyReference.cache
