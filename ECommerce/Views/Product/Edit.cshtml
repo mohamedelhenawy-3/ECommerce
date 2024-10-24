@@ -1,0 +1,84 @@
+﻿@model ModelClasses.ViewModels.ProductViewModel
+
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<h2 class="text-center text-info">Edit Product</h2>
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <!-- Hidden field for Product Id -->
+    <input type="hidden" asp-for="Product.Id" />
+
+    <!-- Product Name -->
+    <div class="form-group">
+        <label asp-for="Product.Name" class="control-label"></label>
+        <input asp-for="Product.Name" class="form-control" />
+        <span asp-validation-for="Product.Name" class="text-danger"></span>
+    </div>
+
+    <!-- Product Price -->
+    <div class="form-group">
+        <label asp-for="Product.Price" class="control-label"></label>
+        <input asp-for="Product.Price" class="form-control" />
+        <span asp-validation-for="Product.Price" class="text-danger"></span>
+    </div>
+
+    <!-- Product Description -->
+    <div class="form-group">
+        <label asp-for="Product.Description" class="control-label"></label>
+        <textarea asp-for="Product.Description" class="form-control"></textarea>
+        <span asp-validation-for="Product.Description" class="text-danger"></span>
+    </div>
+
+    <!-- Product Category -->
+    <div class="form-group">
+        <label asp-for="Product.CategoryId" class="control-label">Category</label>
+        <select asp-for="Product.CategoryId" class="form-control" asp-items="Model.CategoriesList"></select>
+        <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+    </div>
+
+    <!-- Current Product Images -->
+    <div class="form-group">
+        <label class="control-label">Current Product Images</label>
+        <div>
+            @if (Model.Product.ImgUrls != null && Model.Product.ImgUrls.Any())
+            {
+                <ul class="list-unstyled" style="display: flex; flex-wrap: wrap; padding-left: 0;">
+                    @foreach (var image in Model.Product.ImgUrls)
+                    {
+                        <li style="margin-right: 10px; margin-bottom: 10px;">
+                            <!-- إضافة هامش للفصل بين الصور -->
+                            <img src="~/Images/@image.ImageUrl" alt="Product Image" width="150" height="100" />
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p>No images available for this product.</p>
+            }
+        </div>
+    </div>
+
+
+    <!-- Upload New Product Images -->
+    <div class="form-group">
+        <label asp-for="Images" class="control-label">Upload New Product Images</label>
+        <input type="file" asp-for="Images" class="form-control" multiple />
+        <span asp-validation-for="Images" class="text-danger"></span>
+    </div>
+
+    <!-- Submit button -->
+    <div class="row">
+        <div class="col-12 text-center">
+            <input type="submit" value="Save Changes" class="btn btn-primary btn-sm" />
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

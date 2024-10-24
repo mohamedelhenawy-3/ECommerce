@@ -1,0 +1,38 @@
+﻿@model ModelClasses.Category
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container mt-5 d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-header bg-info text-white text-center">
+                <h2>Create Category</h2>
+            </div>
+            <div class="card-body">
+                <form method="post" action="/Category/SaveChange">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label"></label>
+                        <input asp-for="Name" class="form-control" placeholder="Enter category name" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <input type="hidden" asp-for="Id" />
+
+                    <div class="d-grid">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                        <a asp-action="Category" class="btn btn-secondary mt-2">Cancel</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Html.RenderPartialAsync("_ValidationScriptsPartial")
+}

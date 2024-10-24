@@ -1,0 +1,30 @@
+﻿@model ModelClasses.Category
+
+@{
+    ViewData["Title"] = "Edit Category";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center">Edit Category</h1>
+
+    <form asp-action="Edit" method="post">
+        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="Name" class="control-label"></label>
+            <input asp-for="Name" class="form-control" placeholder="Enter category name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <input type="hidden" asp-for="Id" /> <!-- Include the Id for the update -->
+
+        <div class="form-group text-center">
+            <input type="submit" value="Save" class="btn btn-primary btn-lg" />
+            <a asp-action="Category" class="btn btn-secondary btn-lg ml-2">Cancel</a> <!-- Add a cancel button -->
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @Html.RenderPartialAsync("_ValidationScriptsPartial")
+}

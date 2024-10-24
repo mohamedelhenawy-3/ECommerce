@@ -1,0 +1,369 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ECommerce.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ECommerce.bundle.scp.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\02409be2-3d9b-42cb-945b-aa6e4307b05c_photo_5798482901216641024_y.jpg",
+      "PackagePath": "staticwebassets\\Images\\02409be2-3d9b-42cb-945b-aa6e4307b05c_photo_5798482901216641024_y.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\0c405029-1312-4384-91a7-6edac7aca62f_th.jfif",
+      "PackagePath": "staticwebassets\\Images\\0c405029-1312-4384-91a7-6edac7aca62f_th.jfif"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\17a5d370-b7fd-4af0-85da-3cf43bed1ca0_photo_5798482901216641024_y.jpg",
+      "PackagePath": "staticwebassets\\Images\\17a5d370-b7fd-4af0-85da-3cf43bed1ca0_photo_5798482901216641024_y.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\19bf4091-0796-4bc7-a526-6713da78135f_pexels-elijahsad-3473569.jpg",
+      "PackagePath": "staticwebassets\\Images\\19bf4091-0796-4bc7-a526-6713da78135f_pexels-elijahsad-3473569.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\1db447c5-9bc7-4823-a00f-505660c75774_pexels-alexandro-david-871783-1835016.jpg",
+      "PackagePath": "staticwebassets\\Images\\1db447c5-9bc7-4823-a00f-505660c75774_pexels-alexandro-david-871783-1835016.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\47d8cbc6-070d-45b7-9378-d65dfbf81b97_th.jfif",
+      "PackagePath": "staticwebassets\\Images\\47d8cbc6-070d-45b7-9378-d65dfbf81b97_th.jfif"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\56e00b4d-9e75-4f53-bdcc-f480dcaa7355_MacBookPro.jpg",
+      "PackagePath": "staticwebassets\\Images\\56e00b4d-9e75-4f53-bdcc-f480dcaa7355_MacBookPro.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\5f4033dd-f8b6-4507-8652-960d17c99d35_photo_5798482901216641024_y.jpg",
+      "PackagePath": "staticwebassets\\Images\\5f4033dd-f8b6-4507-8652-960d17c99d35_photo_5798482901216641024_y.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\63921ecd-8004-4533-badf-b9b0d2028009_th.jfif",
+      "PackagePath": "staticwebassets\\Images\\63921ecd-8004-4533-badf-b9b0d2028009_th.jfif"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\6d817012-614c-4829-859c-493aa5d12bb3_images.jfif",
+      "PackagePath": "staticwebassets\\Images\\6d817012-614c-4829-859c-493aa5d12bb3_images.jfif"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\70d664c3-e27e-41fa-b21a-95813dbb1cb6_th.jfif",
+      "PackagePath": "staticwebassets\\Images\\70d664c3-e27e-41fa-b21a-95813dbb1cb6_th.jfif"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\837174c4-f3a3-4681-a193-4ea99584d1d5_photo_5798482901216641023_y.jpg",
+      "PackagePath": "staticwebassets\\Images\\837174c4-f3a3-4681-a193-4ea99584d1d5_photo_5798482901216641023_y.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\83f5f405-76c4-40a6-8d5d-9de19a2dcafe_Samsung.jpg",
+      "PackagePath": "staticwebassets\\Images\\83f5f405-76c4-40a6-8d5d-9de19a2dcafe_Samsung.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\894d3b23-ee01-40f5-a998-63c001746a47_photo_5798482901216641023_y.jpg",
+      "PackagePath": "staticwebassets\\Images\\894d3b23-ee01-40f5-a998-63c001746a47_photo_5798482901216641023_y.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\9017a31a-7e8a-4a42-b80e-8adbb6ce8e63_photo_5798482901216641025_y.jpg",
+      "PackagePath": "staticwebassets\\Images\\9017a31a-7e8a-4a42-b80e-8adbb6ce8e63_photo_5798482901216641025_y.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\92d8d036-3031-46e8-a064-299707df91e9_th.jfif",
+      "PackagePath": "staticwebassets\\Images\\92d8d036-3031-46e8-a064-299707df91e9_th.jfif"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\b139ca97-e6d2-4dd7-a089-1ba6125a0dc5_photo_5798482901216641023_y.jpg",
+      "PackagePath": "staticwebassets\\Images\\b139ca97-e6d2-4dd7-a089-1ba6125a0dc5_photo_5798482901216641023_y.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\baffbced-b3e6-421b-9c68-c1a048ce6dab_444457650_374682918932603_3316000475147546547_n.jpg",
+      "PackagePath": "staticwebassets\\Images\\baffbced-b3e6-421b-9c68-c1a048ce6dab_444457650_374682918932603_3316000475147546547_n.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\cd54abaa-3dfc-4626-9f8a-e71b576673ca_pexels-photo-2378138.webp",
+      "PackagePath": "staticwebassets\\Images\\cd54abaa-3dfc-4626-9f8a-e71b576673ca_pexels-photo-2378138.webp"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\d1f4ea52-69ae-42d8-b027-1837fa9de883_photo_5798482901216641025_y.jpg",
+      "PackagePath": "staticwebassets\\Images\\d1f4ea52-69ae-42d8-b027-1837fa9de883_photo_5798482901216641025_y.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\d292331a-5552-4de7-a3e2-ccbaddfa6f8c_th.jfif",
+      "PackagePath": "staticwebassets\\Images\\d292331a-5552-4de7-a3e2-ccbaddfa6f8c_th.jfif"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\d3fc5e92-b00e-4f74-a607-304f2373013f_Acer.jpg",
+      "PackagePath": "staticwebassets\\Images\\d3fc5e92-b00e-4f74-a607-304f2373013f_Acer.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\d9e34537-1b2a-4ca4-8bc6-2e081784cf0e_Dell.jfif",
+      "PackagePath": "staticwebassets\\Images\\d9e34537-1b2a-4ca4-8bc6-2e081784cf0e_Dell.jfif"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\e514ffea-2cd3-4ed2-bbe0-da84942232dd_photo_5798482901216641023_y.jpg",
+      "PackagePath": "staticwebassets\\Images\\e514ffea-2cd3-4ed2-bbe0-da84942232dd_photo_5798482901216641023_y.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\e96badea-d224-46bd-94a4-4ccbb66a8469_pexels-photo-198192.webp",
+      "PackagePath": "staticwebassets\\Images\\e96badea-d224-46bd-94a4-4ccbb66a8469_pexels-photo-198192.webp"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\ef89afff-1a8e-4753-99e8-e1a39a5c9504_444457650_374682918932603_3316000475147546547_n.jpg",
+      "PackagePath": "staticwebassets\\Images\\ef89afff-1a8e-4753-99e8-e1a39a5c9504_444457650_374682918932603_3316000475147546547_n.jpg"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ECommerce.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ECommerce.props",
+      "PackagePath": "build\\ECommerce.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ECommerce.props",
+      "PackagePath": "buildMultiTargeting\\ECommerce.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ECommerce.props",
+      "PackagePath": "buildTransitive\\ECommerce.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

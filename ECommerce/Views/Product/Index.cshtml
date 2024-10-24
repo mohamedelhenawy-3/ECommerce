@@ -1,0 +1,68 @@
+﻿
+@model IEnumerable<ModelClasses.Product>
+<h2>Create Product</h2>
+
+
+@{
+    ViewData["Title"] = "Product List";
+}
+
+
+<!-- Button to navigate to Create view -->
+<a asp-action="Create" class="btn btn-success mb-3">Create New Product</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.Price</td>
+                    <td>@product.Description</td>
+
+                    <td>
+                    @if (product.Category != null)
+                    {
+                        @product.Category.Name
+                    }
+                    else
+                    {
+                        <p>No Category</p>
+                    }
+                    </td>
+
+                    <td>
+                    @if (product.ImgUrls != null && product.ImgUrls.Any())
+                    {
+                        var firstImage = product.ImgUrls.FirstOrDefault(); // Get the first image
+                        if (firstImage != null)
+                        {
+                            <img src="~/Images/@firstImage.ImageUrl" alt="Product Image" width="150" height="100" />
+                        }
+                    }
+                    else
+                    {
+                        <p>No Image</p>
+                    }
+
+
+                    </td>
+
+                    <td>
+                    <a asp-action="Edit" asp-route-Id="@product.Id" class=" btn btn-primary">Edit</a>
+                     <a href="@Url.Action("Delete", "Product", new { id = product.Id })" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+        }
+    </tbody>
+</table>

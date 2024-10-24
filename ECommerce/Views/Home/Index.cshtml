@@ -1,0 +1,160 @@
+﻿@model ModelClasses.ViewModels.HomeViewModel
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-3">
+            <!-- Search Box -->
+            <div class="mb-3">
+                <input  type="text" placeholder="Keyword Search" class="form-control" />
+            </div>
+
+            <!-- Dynamic Category List -->
+            <div class="card mb-3">
+                <div class="card-header">Category</div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        @foreach (var category in Model.Categories)
+                        {
+                            <li class="list-group-item">
+                                <a asp-controller="Home" asp-action="Index" asp-route-SearchByCategory="@category.Name">@category.Name</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Price Range -->
+            <div class="card mb-3">
+                <div class="card-header">Price Range</div>
+                <div class="card-body">
+                    <div id="slider-range" class="slider"></div>
+                    <div class="slider-info">
+                        <span id="slider-range-amount"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter -->
+            <div class="card mb-3">
+                <div class="card-header">Filter</div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label>Brand</label>
+                            <select class="form-select">
+                                <option>Wallmart</option>
+                                <option>Catseye</option>
+                                <option>Moonsoon</option>
+                                <option>Textmart</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label>Color</label>
+                            <select class="form-select">
+                                <option>White</option>
+                                <option>Black</option>
+                                <option>Red</option>
+                                <option>Green</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label>Type</label>
+                            <select class="form-select">
+                                <option>Small</option>
+                                <option>Medium</option>
+                                <option>Large</option>
+                                <option>Extra Large</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Filter</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Best Seller -->
+            <div class="card">
+                <div class="card-header">Best Seller</div>
+                <div class="card-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <img src="https://www.bootdey.com/image/250x220/FFB6C1/000000" class="img-fluid" alt="Item One" />
+                            <h5 class="mt-2">Item One Title</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <img src="https://www.bootdey.com/image/250x220/A2BE2/000000" class="img-fluid" alt="Item Two" />
+                            <h5 class="mt-2">Item Two Title</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <img src="https://www.bootdey.com/image/250x220/6495ED/000000" class="img-fluid" alt="Item Three" />
+                            <h5 class="mt-2">Item Three Title</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <!-- Centered Welcome Message and Search -->
+            <div class="text-center mb-4"> 
+                <h2>Welcome to ECommerce!</h2>
+                <p>Explore our wide range of products.</p>
+                <form asp-action="Index" method="get">
+                <div class="input-group mb-3">
+                    <input asp-for="SearchByName" value="@Model.SearchByName" type="text" class="form-control" placeholder="Search Products..." aria-label="Search Products">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+                        </form>
+            </div>
+
+            <div class="row">
+                @foreach (var product in Model.Products)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="image-container">
+                                @foreach (var image in product.ImgUrls)
+                                {
+                                    <img src="@Url.Content("~/Images/" + image.ImageUrl)" alt="Product Image" class="card-img-top img-fluid" />
+                                }
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">@product.Name</h5>
+                                <p class="card-text">@product.</p>
+                                <a asp-controller="UserCart" asp-action="AddToCart" asp-route-ProductId="@product.Id" class="btn btn-primary mt-auto">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+                }
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Price range slider
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [75, 300],
+                slide: function (event, ui) {
+                    $("#slider-range-amount").text("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#slider-range-amount").text("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
+        });
+    </script>
+}
