@@ -7,9 +7,20 @@
     ViewData["Title"] = "Product List";
 }
 
+<style>
+    .custom-btn-color {
+        background-color: #4A628A; /* Set the background color */
+        border-color: #4A628A; /* Set the border color */
+        color: white; /* Set the text color to white for better contrast */
+    }
 
+        .custom-btn-color:hover {
+            background-color: #B9E5E8; /* Slightly darker shade for hover effect */
+            border-color: #7AB2D3;
+        }
+</style>
 <!-- Button to navigate to Create view -->
-<a asp-action="Create" class="btn btn-success mb-3">Create New Product</a>
+<a asp-action="Create" class="btn btn-success mb-3 custom-btn-color">Create New Product</a>
 
 <table class="table table-striped">
     <thead>

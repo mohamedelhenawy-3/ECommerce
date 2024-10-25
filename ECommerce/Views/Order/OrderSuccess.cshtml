@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Order Success";
+    int orderId = ViewBag.OrderId;
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+<style>
+    .custom-btn-color {
+        background-color: #4A628A; /* Set the background color */
+        border-color: #4A628A; /* Set the border color */
+        color: white; /* Set the text color to white for better contrast */
+    }
+
+        .custom-btn-color:hover {
+            background-color: #B9E5E8; /* Slightly darker shade for hover effect */
+            border-color: #7AB2D3;
+        }
+</style>
+<div class="container mt-5">
+    <div class="card shadow-sm border-success">
+        <div class="card-header bg-success text-white text-center">
+            <h2 class="mb-0">Order Successful!</h2>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title text-center text-success">Thank you for your purchase!</h5>
+            <p class="card-text text-center">
+                Your order has been processed successfully.
+            </p>
+
+            <!-- Order Summary Table -->
+            <div class="table-responsive">
+                <table class="table table-bordered mt-4">
+                    <tbody>
+                        <tr>
+                            <th class="bg-light text-end" style="width: 40%;">Order ID:</th>
+                            <td>@orderId</td>
+                        </tr>
+                        <tr>
+                            <th class="bg-light text-end">Order Status:</th>
+                            <td class="text-success">Processed</td>
+                        </tr>
+                        <tr>
+                            <th class="bg-light text-end">Message:</th>
+                            <td>Thank you for your purchase! You can review your order details in your order history.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Back to Home Button -->
+            <div class="text-center mt-4">
+                <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg custom-btn-color">
+                    <i class="bi bi-house-door-fill"></i> Back To Home
+                </a>
+            </div>
+        </div>
+        <div class="card-footer text-muted text-center">
+            Thank you for shopping with us!
+        </div>
+    </div>
+</div>

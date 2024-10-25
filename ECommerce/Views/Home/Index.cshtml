@@ -3,13 +3,24 @@
 @{
     ViewData["Title"] = "Home";
 }
+<style>
+    .custom-btn-color {
+        background-color: #4A628A; /* Set the background color */
+        border-color: #4A628A; /* Set the border color */
+        color: white; /* Set the text color to white for better contrast */
+    }
 
+        .custom-btn-color:hover {
+            background-color: #B9E5E8; /* Slightly darker shade for hover effect */
+            border-color: #7AB2D3;
+        }
+</style>
 <div class="container mt-4">
     <div class="row">
         <div class="col-md-3">
             <!-- Search Box -->
             <div class="mb-3">
-                <input  type="text" placeholder="Keyword Search" class="form-control" />
+                <input type="text" placeholder="Keyword Search" class="form-control" />
             </div>
 
             <!-- Dynamic Category List -->
@@ -26,7 +37,6 @@
                     </ul>
                 </div>
             </div>
-
 
             <!-- Price Range -->
             <div class="card mb-3">
@@ -71,7 +81,8 @@
                                 <option>Extra Large</option>
                             </select>
                         </div>
-                        <button class="btn btn-primary" type="submit">Filter</button>
+                        <!-- Filter Button Styled -->
+                        <button class="btn btn-primary custom-btn-color" type="submit">Filter</button>
                     </form>
                 </div>
             </div>
@@ -103,15 +114,16 @@
 
         <div class="col-md-9">
             <!-- Centered Welcome Message and Search -->
-            <div class="text-center mb-4"> 
+            <div class="text-center mb-4 p-4" style="background-color: #7AB2D3; border-radius: 8px;">
                 <h2>Welcome to ECommerce!</h2>
                 <p>Explore our wide range of products.</p>
                 <form asp-action="Index" method="get">
-                <div class="input-group mb-3">
-                    <input asp-for="SearchByName" value="@Model.SearchByName" type="text" class="form-control" placeholder="Search Products..." aria-label="Search Products">
-                    <button class="btn btn-primary" type="submit">Search</button>
-                </div>
-                        </form>
+                    <div class="input-group mb-3">
+                        <input asp-for="SearchByName" value="@Model.SearchByName" type="text" class="form-control" placeholder="Search Products..." aria-label="Search Products">
+                        <!-- Search Button Styled -->
+                        <button class="btn btn-primary custom-btn-color" type="submit">Search</button>
+                    </div>
+                </form>
             </div>
 
             <div class="row">
@@ -127,16 +139,14 @@
                             </div>
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">@product.Name</h5>
-                                <p class="card-text">@product.</p>
-                                <a asp-controller="UserCart" asp-action="AddToCart" asp-route-ProductId="@product.Id" class="btn btn-primary mt-auto">Add to Cart</a>
+                                <p class="card-text">@product.Description</p>
+                                <!-- Add to Cart Button Styled -->
+                                <a asp-controller="UserCart" asp-action="AddToCart" asp-route-ProductId="@product.Id" class="btn btn-primary mt-auto custom-btn-color">Add to Cart</a>
                             </div>
                         </div>
                     </div>
                 }
-                }
             </div>
-
-
         </div>
     </div>
 </div>

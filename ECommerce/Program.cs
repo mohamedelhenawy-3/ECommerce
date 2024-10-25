@@ -56,7 +56,7 @@ namespace ECommerce
             app.UseStaticFiles();
 
             app.UseRouting();
-            StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
+            StripeConfiguration.ApiKey ="sk_test_51QD6R7007c2glpwVgdpUpzHdF1daBhjnw1uDw1XNQb6YQAb6MISrvBGmEcO9jpG83FN26SrLTz0L2LleaQ3Qy4aq00waLCfnrV";
 
             app.UseSession();
             app.UseAuthorization();

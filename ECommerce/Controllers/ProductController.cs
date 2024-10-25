@@ -1,4 +1,5 @@
 ﻿using DataBaseAccess;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -40,6 +41,7 @@ namespace ECommerce.Controllers
             return View(ProductViewModel);
         }
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Create(ProductViewModel productvm)
         {
             // Initialize the image URL string
