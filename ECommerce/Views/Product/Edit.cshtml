@@ -3,7 +3,18 @@
 @{
     ViewData["Title"] = "Edit Product";
 }
+<style>
+    .custom-btn-color {
+        background-color: #4A628A; /* Set the background color */
+        border-color: #4A628A; /* Set the border color */
+        color: white; /* Set the text color to white for better contrast */
+    }
 
+        .custom-btn-color:hover {
+            background-color: #B9E5E8; /* Slightly darker shade for hover effect */
+            border-color: #7AB2D3;
+        }
+</style>
 <h2 class="text-center text-info">Edit Product</h2>
 
 <form asp-action="Edit" method="post" enctype="multipart/form-data">
@@ -72,7 +83,7 @@
     <!-- Submit button -->
     <div class="row">
         <div class="col-12 text-center">
-            <input type="submit" value="Save Changes" class="btn btn-primary btn-sm" />
+            <input type="submit" value="Save Changes" class="btn btn-primary btn-sm custom-btn-color" />
         </div>
     </div>
 </form>

@@ -3,75 +3,117 @@
 @{
     ViewData["Title"] = "Create Product";
 }
+<style>
+    .custom-btn-color {
+        background-color: #4A628A; /* Set the background color */
+        border-color: #4A628A; /* Set the border color */
+        color: white; /* Set the text color to white for better contrast */
+    }
 
-<h2>Create Product</h2>
+        .custom-btn-color:hover {
+            background-color: #B9E5E8; /* Lighter shade for hover effect */
+            border-color: #7AB2D3;
+        }
 
-<form asp-action="Create" method="post" enctype="multipart/form-data">
-    <!-- Product Name -->
-    <div class="form-group">
-        <label asp-for="Product.Name" class="control-label"></label>
-        <input asp-for="Product.Name" class="form-control" />
-        <span asp-validation-for="Product.Name" class="text-danger"></span>
-    </div>
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Center vertically */
+        background-color: #f8f9fa; /* Light background for contrast */
+        padding: 20px;
+    }
 
-    <!-- Product Price -->
-    <div class="form-group">
-        <label asp-for="Product.Price" class="control-label"></label>
-        <input asp-for="Product.Price" class="form-control" />
-        <span asp-validation-for="Product.Price" class="text-danger"></span>
-    </div>
+    .form-card {
+        width: 100%;
+        max-width: 700px; /* Limit max-width to make it compact */
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-    <!-- Product Description -->
-    <div class="form-group">
-        <label asp-for="Product.Description" class="control-label"></label>
-        <textarea asp-for="Product.Description" class="form-control"></textarea>
-        <span asp-validation-for="Product.Description" class="text-danger"></span>
-    </div>
+    .form-header {
+        background-color: #7AB2D3;
+        color: white;
+        padding: 15px;
+        border-radius: 8px 8px 0 0;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+</style>
 
-    <!-- Product Category -->
-    <div class="form-group">
-        <label asp-for="Product.CategoryId" class="control-label">Category</label>
-        <select asp-for="Product.CategoryId" class="form-control" asp-items="Model.CategoriesList"></select>
-        <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
-    </div>
-
-    <!-- Product Images -->
-    <div class="form-group">
-        <label asp-for="Images" class="control-label">Product Images</label>
-        <input type="file" asp-for="Images" class="form-control" multiple />
-        <span asp-validation-for="Images" class="text-danger"></span>
-    </div>
-
-    <!-- Inventory Name -->
-    <div class="form-group">
-        <label asp-for="Inventories.Name" class="control-label">Inventory Name</label>
-        <input asp-for="Inventories.Name" class="form-control" />
-        <span asp-validation-for="Inventories.Name" class="text-danger"></span>
-    </div>
-
-    <!-- Inventory Purchase Price -->
-    <div class="form-group">
-        <label asp-for="Inventories.PurchasePrice" class="control-label">Purchase Price</label>
-        <input asp-for="Inventories.PurchasePrice" class="form-control" />
-        <span asp-validation-for="Inventories.PurchasePrice" class="text-danger"></span>
-    </div>
-
-    <!-- Inventory Quantity -->
-    <div class="form-group">
-        <label asp-for="Inventories.Quantity" class="control-label">Quantity</label>
-        <input asp-for="Inventories.Quantity" class="form-control" />
-        <span asp-validation-for="Inventories.Quantity" class="text-danger"></span>
-    </div>
-
-    <!-- Submit button -->
-    <!-- Submit button -->
-    <div class="row">
-        <div class="col-12 text-center">
-            <input type="submit" value="Create" class="btn btn-primary btn-sm" />
+<div class="form-container">
+    <div class="form-card">
+        <div class="form-header">
+            Create Product
         </div>
-    </div>
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+            <!-- Product Name -->
+            <div class="form-group mb-3">
+                <label asp-for="Product.Name" class="control-label"></label>
+                <input asp-for="Product.Name" class="form-control" />
+                <span asp-validation-for="Product.Name" class="text-danger"></span>
+            </div>
 
-</form>
+            <!-- Product Price -->
+            <div class="form-group mb-3">
+                <label asp-for="Product.Price" class="control-label"></label>
+                <input asp-for="Product.Price" class="form-control" />
+                <span asp-validation-for="Product.Price" class="text-danger"></span>
+            </div>
+
+            <!-- Product Description -->
+            <div class="form-group mb-3">
+                <label asp-for="Product.Description" class="control-label"></label>
+                <textarea asp-for="Product.Description" class="form-control"></textarea>
+                <span asp-validation-for="Product.Description" class="text-danger"></span>
+            </div>
+
+            <!-- Product Category -->
+            <div class="form-group mb-3">
+                <label asp-for="Product.CategoryId" class="control-label">Category</label>
+                <select asp-for="Product.CategoryId" class="form-control" asp-items="Model.CategoriesList"></select>
+                <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+            </div>
+
+            <!-- Product Images -->
+            <div class="form-group mb-3">
+                <label asp-for="Images" class="control-label">Product Images</label>
+                <input type="file" asp-for="Images" class="form-control" multiple />
+                <span asp-validation-for="Images" class="text-danger"></span>
+            </div>
+
+            <!-- Inventory Name -->
+            <div class="form-group mb-3">
+                <label asp-for="Inventories.Name" class="control-label">Inventory Name</label>
+                <input asp-for="Inventories.Name" class="form-control" />
+                <span asp-validation-for="Inventories.Name" class="text-danger"></span>
+            </div>
+
+            <!-- Inventory Purchase Price -->
+            <div class="form-group mb-3">
+                <label asp-for="Inventories.PurchasePrice" class="control-label">Purchase Price</label>
+                <input asp-for="Inventories.PurchasePrice" class="form-control" />
+                <span asp-validation-for="Inventories.PurchasePrice" class="text-danger"></span>
+            </div>
+
+            <!-- Inventory Quantity -->
+            <div class="form-group mb-3">
+                <label asp-for="Inventories.Quantity" class="control-label">Quantity</label>
+                <input asp-for="Inventories.Quantity" class="form-control" />
+                <span asp-validation-for="Inventories.Quantity" class="text-danger"></span>
+            </div>
+
+            <!-- Submit button -->
+            <div class="text-center">
+                <input type="submit" value="Create" class="btn custom-btn-color btn-lg" />
+            </div>
+        </form>
+    </div>
+</div>
 
 @section Scripts {
     @{
