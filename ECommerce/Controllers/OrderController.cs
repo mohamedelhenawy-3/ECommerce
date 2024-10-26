@@ -14,6 +14,9 @@ namespace ECommerce.Controllers
     public class OrderController : Controller
     {
         private readonly AppDBContext _context;
+        [BindProperty]
+        public OrderDetialsViewModel OrderDetailsVM { get; set; }
+
         public OrderController(AppDBContext context)
         {
             _context = context;
@@ -177,9 +180,6 @@ namespace ECommerce.Controllers
 
         }
 
-
-
-
         public IActionResult OrderSuccess(int id)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -224,6 +224,47 @@ namespace ECommerce.Controllers
             return RedirectToAction("ShowCart", "Cart");
         }
 
+        public IActionResult OrderHistory(string? Status)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            List<UserOrderHeader> ListOfOrder = new List<UserOrderHeader>();
+            if(Status != null && Status != "All")
+            {
+                if (User.IsInRole("Admin"))
+                {
+                    ListOfOrder = _context.UserOrderHeaders.Where(u => u.OrderState == Status).ToList();
+                }
+                else
+                {
+                    ListOfOrder = _context.UserOrderHeaders.Where(u => u.OrderState == Status && u.UserId.Contains(userId)).ToList();
+                }
+            }
+            else
+            {
+                if (User.IsInRole("Admin"))
+                {
+                    ListOfOrder = _context.UserOrderHeaders.ToList();
+                }
+                else
+                {
+                    ListOfOrder = _context.UserOrderHeaders.Where(u => u.UserId.Contains(userId)).ToList();
+                }
+            }
+            return View(ListOfOrder);
+        }
+
+        public IActionResult OrderDetails(int orderId)
+        {
+            var OrderDetailsVM = new OrderDetialsViewModel
+            {
+                UserOrderHeader = _context.UserOrderHeaders.FirstOrDefault(x => x.Id == orderId),
+                OrderDetails = _context.OrderDetails
+                    .Include(x => x.Product)
+                    .Where(x => x.OrderHeaderId == orderId)
+                    .ToList()
+            };
+            return View(OrderDetailsVM);
+        }
 
     }
 }

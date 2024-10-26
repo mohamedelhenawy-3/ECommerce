@@ -1,0 +1,137 @@
+﻿@model IEnumerable<ModelClasses.UserOrderHeader>
+
+@{
+    var Status = Context.Request.Query["Status"];
+    var Pending = "text-muted";
+    var Inprocess = "text-muted";
+    var Shipped = "text-muted";
+    var Completed = "text-muted";
+    var Approved = "text-muted";
+    var All = "text-muted";
+
+    switch (Status)
+    {
+        case "Pending":
+            Pending = "active text-white bg-primary";
+            break;
+        case "Inprocess":
+            Inprocess = "active text-white bg-primary";
+            break;
+        case "Shipped":
+            Shipped = "active text-white bg-primary";
+            break;
+        case "Completed":
+            Completed = "active text-white bg-primary";
+            break;
+        case "Approved":
+            Approved = "active text-white bg-primary";
+            break;
+        default:
+            All = "active text-white bg-primary";
+            break;
+    }
+}
+<style>
+    /* Custom button color styles */
+    .custom-btn-color {
+        background-color: #4A628A; /* Set the background color */
+        border-color: #4A628A; /* Set the border color */
+        color: white; /* Set the text color to white for better contrast */
+    }
+
+    
+    /* Custom table header style */
+    .panel-heading {
+        background-color: #7AB2D3; /* Set the background color */
+        color: white; /* Set the text color to white */
+        border-bottom: 2px solid #4A628A; /* Add a subtle border for distinction */
+    }
+    /* Custom button color styles */
+    .custom-btn-color {
+        background-color: #4A628A; /* Set the background color */
+        border-color: #4A628A; /* Set the border color */
+        color: white; /* Set the text color to white for better contrast */
+    }
+
+     
+
+    /* Ensure custom-btn-color works well in table headers */
+    table thead.custom-btn-color {
+        background-color: #4A628A; /* Set the header background color */
+        color: white; /* Set the text color to white */
+    }
+
+
+</style>
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0">Order History</h2>
+    </div>
+
+    <!-- Status filter section -->
+    <div class="mb-4">
+        <nav>
+            <div class="nav nav-pills">
+                <a class="nav-link @All rounded-pill me-2" asp-action="OrderHistory" asp-route-Status="All">All</a>
+                <a class="nav-link @Pending rounded-pill me-2" asp-action="OrderHistory" asp-route-Status="Pending">Pending</a>
+                <a class="nav-link @Inprocess rounded-pill me-2" asp-action="OrderHistory" asp-route-Status="Inprocess">In Process</a>
+                <a class="nav-link @Shipped rounded-pill me-2" asp-action="OrderHistory" asp-route-Status="Shipped">Shipped</a>
+                <a class="nav-link @Completed rounded-pill me-2" asp-action="OrderHistory" asp-route-Status="Completed">Completed</a>
+                <a class="nav-link @Approved rounded-pill" asp-action="OrderHistory" asp-route-Status="Approved">Approved</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Display order list -->
+    @if (!Model.Any())
+    {
+        <div class="card shadow-sm p-5 text-center">
+            <p class="lead text-muted mb-0">No orders found. Start shopping to see your order history here!</p>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive shadow-sm rounded">
+            <table class="table table-bordered table-striped align-middle mb-0">
+                <thead class="custom-btn-color">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Date of Order</th>
+                        <th scope="col">Total Amount</th>
+                        <th scope="col">Order Status</th>
+                        <th scope="col">Delivery Address</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var order in Model)
+                    {
+                        <tr>
+                            <td>
+                                <span >@order.Name</span>
+                            </td>
+                            <td>@order.DateOfOrder.ToString("MMMM dd, yyyy")</td>
+                            <td>@order.TotalAmount.ToString("C")</td>
+                            <td>
+                                <span class="badge rounded-pill bg-info px-3 py-2">@order.OrderState</span>
+                            </td>
+                            <td>
+                                <div class="text-truncate" style="max-width: 250px;">
+                                    @order.DeliveryStreetAddress, @order.CIty, @order.State, @order.PostalCode
+                                </div>
+                            </td>
+                            <td>
+                                <a asp-action="OrderDetails" asp-controller="Order" asp-route-orderId="@order.Id" class="btn custom-btn-color btn-sm">
+                                    <i class="bi bi-eye"></i> View
+                                </a>
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

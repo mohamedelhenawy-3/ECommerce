@@ -1,0 +1,50 @@
+﻿@model ModelClasses.ViewModels.OrderDetialsViewModel
+
+<div class="container mt-4">
+    <h2>Order Details</h2>
+
+    <!-- Order Summary Section -->
+    <div class="card mb-4">
+        <div class="card-header custom-btn-color text-white">
+            Order Summary
+        </div>
+        <div class="card-body">
+            <p><strong>Order ID:</strong> @Model.UserOrderHeader.Id</p>
+            <p><strong>Date of Order:</strong> @Model.UserOrderHeader.DateOfOrder.ToString("yyyy-MM-dd")</p>
+            <p><strong>Total Amount:</strong> @Model.UserOrderHeader.TotalAmount.ToString("C")</p>
+            <p><strong>Order Status:</strong> @Model.UserOrderHeader.OrderState</p>
+            <p><strong>Payment Status:</strong> @Model.UserOrderHeader.PaymentState</p>
+            <p><strong>Delivery Address:</strong> @Model.UserOrderHeader.DeliveryStreetAddress, @Model.UserOrderHeader.CIty, @Model.UserOrderHeader.State, @Model.UserOrderHeader.PostalCode</p>
+        </div>
+    </div>
+
+    <!-- Order Details Section -->
+    <div class="card">
+        <div class="card-header custom-btn-color text-white">
+            Order Items
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="panel-heading text-white">
+                    <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.OrderDetails)
+                    {
+                        <tr>
+                            <td>@item.Product.Name</td>
+                            <td>@item.Count</td>
+                            <td>@item.Price.ToString("C")</td>
+                            <td>@(item.Count * item.Price).ToString("C")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
