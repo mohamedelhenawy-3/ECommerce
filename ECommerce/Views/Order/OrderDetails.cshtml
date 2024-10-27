@@ -1,50 +1,227 @@
 ﻿@model ModelClasses.ViewModels.OrderDetialsViewModel
-
+<form method="post">
 <div class="container mt-4">
     <h2>Order Details</h2>
+ 
+        <input asp-for="@Model.UserOrderHeader.Id"  />
+        <div class="row">
+            <!-- Customer Details Card -->
+            <div class="col-md-6 mb-4">
+                <div class="panel panel-info">
+                    <div class="panel-heading">Address</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <h4>Shipping Address</h4>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-xs-12">
+                                <label asp-for="UserOrderHeader.Name" class="control-label"><strong>Name:</strong></label>
+                                <input asp-for="UserOrderHeader.Name" class="form-control" />
+                                <span asp-validation-for="UserOrderHeader.Name" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label asp-for="UserOrderHeader.PhoneNumber" class="control-label"><strong>Phone Number:</strong></label>
+                                <input asp-for="UserOrderHeader.PhoneNumber" class="form-control" />
+                                <span asp-validation-for="UserOrderHeader.PhoneNumber" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label asp-for="UserOrderHeader.DeliveryStreetAddress" class="control-label"><strong>Address:</strong></label>
+                                <input asp-for="UserOrderHeader.DeliveryStreetAddress" class="form-control" />
+                                <span asp-validation-for="UserOrderHeader.DeliveryStreetAddress" class="text-danger"></span>
+                            </div>
+                        </div>
 
-    <!-- Order Summary Section -->
-    <div class="card mb-4">
-        <div class="card-header custom-btn-color text-white">
-            Order Summary
-        </div>
-        <div class="card-body">
-            <p><strong>Order ID:</strong> @Model.UserOrderHeader.Id</p>
-            <p><strong>Date of Order:</strong> @Model.UserOrderHeader.DateOfOrder.ToString("yyyy-MM-dd")</p>
-            <p><strong>Total Amount:</strong> @Model.UserOrderHeader.TotalAmount.ToString("C")</p>
-            <p><strong>Order Status:</strong> @Model.UserOrderHeader.OrderState</p>
-            <p><strong>Payment Status:</strong> @Model.UserOrderHeader.PaymentState</p>
-            <p><strong>Delivery Address:</strong> @Model.UserOrderHeader.DeliveryStreetAddress, @Model.UserOrderHeader.CIty, @Model.UserOrderHeader.State, @Model.UserOrderHeader.PostalCode</p>
-        </div>
-    </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label asp-for="UserOrderHeader.CIty" class="control-label"><strong>City:</strong></label>
+                                <input asp-for="UserOrderHeader.CIty" class="form-control" />
+                                <span asp-validation-for="UserOrderHeader.CIty" class="text-danger"></span>
+                            </div>
+                        </div>
+                        @if (Model.UserOrderHeader.OrderState != "InProcess")
+                        {
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label asp-for="UserOrderHeader.TrackingNumber" class="control-label"><strong>TrackingNumber:</strong></label>
+                                    <input asp-for="UserOrderHeader.TrackingNumber" class="form-control" readonly />
+                                    <span asp-validation-for="UserOrderHeader.TrackingNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label asp-for="UserOrderHeader.Carrier" class="control-label"><strong>Carrier:</strong></label>
+                                    <input asp-for="UserOrderHeader.Carrier" class="form-control" readonly />
+                                    <span asp-validation-for="UserOrderHeader.Carrier" class="text-danger"></span>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label asp-for="UserOrderHeader.TrackingNumber" class="control-label"><strong>TrackingNumber:</strong></label>
+                                    <input asp-for="UserOrderHeader.TrackingNumber" class="form-control" />
+                                    <span asp-validation-for="UserOrderHeader.TrackingNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label asp-for="UserOrderHeader.Carrier" class="control-label"><strong>Carrier:</strong></label>
+                                    <input asp-for="UserOrderHeader.Carrier" class="form-control" />
+                                    <span asp-validation-for="UserOrderHeader.Carrier" class="text-danger"></span>
+                                </div>
+                            </div>
+                        }
 
-    <!-- Order Details Section -->
-    <div class="card">
-        <div class="card-header custom-btn-color text-white">
-            Order Items
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label asp-for="UserOrderHeader.State" class="control-label"><strong>State:</strong></label>
+                                <input asp-for="UserOrderHeader.State" class="form-control" />
+                                <span asp-validation-for="UserOrderHeader.State" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label asp-for="UserOrderHeader.PostalCode" class="control-label"><strong>Zip / Postal Code:</strong></label>
+                                <input asp-for="UserOrderHeader.PostalCode" class="form-control" />
+                                <span asp-validation-for="UserOrderHeader.PostalCode" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label asp-for="UserOrderHeader.DateOfOrder" class="control-label">Date of Order</label>
+                                <label class="form-control"><strong>@DateTime.Now.ToShortDateString()</strong></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-md-push-6 col-sm-push-6">
+                <!--REVIEW ORDER-->
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        Review Order
+
+                    </div>
+                    <div class="panel-body">
+                        @{
+                            decimal total = 0.0m;
+                        }
+                        @foreach (var item in Model.OrderDetails)
+                        {
+                            <div class="form-group row align-items-center">
+                                <!-- Product Image -->
+                                @if (item.Product.ImgUrls != null && item.Product.ImgUrls.Any())
+                                {
+                                    <div class="col-sm-3 col-xs-3">
+                                        <img class="img-responsive" src="@Url.Content("~/Images/" + item.Product.ImgUrls.First().ImageUrl)" alt="Product Image" style="width: 100%; max-width: 100px;" />
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="col-sm-3 col-xs-3">
+                                        <img class="img-responsive" src="https://via.placeholder.com/100" alt="No Image" />
+                                    </div>
+                                }
+
+                                <!-- Product Details and Quantity -->
+                                <div class="col-sm-6 col-xs-6">
+                                    <strong>@item.Product.Name</strong>
+                                    <div><small>Quantity: <span>@item.Count</span></small></div>
+                                </div>
+
+                                <!-- Product Price (Right Aligned) -->
+                                @{
+                                    decimal SubTotal = (decimal)item.Product.Price * item.Count;
+                                    total += SubTotal;
+                                }
+                                <div class="col-sm-3 col-xs-3 text-end">
+                                    <small>$<span>@item.Product.Price</span></small>
+                                </div>
+                            </div>
+                            <div class="form-group"><hr /></div>
+                        }
+
+                        <!-- Summary and Totals -->
+                        <div class="form-group row">
+                            <div class="col-xs-6">
+                                <strong>Subtotal</strong>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <strong>$@total</strong>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-xs-6">
+                                <strong>Order Total</strong>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <strong>$@total</strong>
+                            </div>
+                            <div>
+                                <div>
+                                    @if (Model.UserOrderHeader.OrderState != "Completed" && User.IsInRole("Admin"))
+                                    {
+                                        <form method="post">
+                                            <button class="btn btn-danger form-control" asp-controller="Order" asp-action="OrderCancel" asp-route-id="@Model.UserOrderHeader.Id">Cancel</button>
+                                        </form>
+
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--REVIEW ORDER END-->
+            </div>
+
+
         </div>
-        <div class="table-responsive">
-            <table class="table table-bordered table-hover">
-                <thead class="panel-heading text-white">
-                    <tr>
-                        <th scope="col">Product</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model.OrderDetails)
-                    {
-                        <tr>
-                            <td>@item.Product.Name</td>
-                            <td>@item.Count</td>
-                            <td>@item.Price.ToString("C")</td>
-                            <td>@(item.Count * item.Price).ToString("C")</td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
+        <hr />
+        <div class="d-flex justify-content-end shadow">
+            @if (User.IsInRole("Admin"))
+            {     
+                @switch (Model.UserOrderHeader.OrderState)
+                        {
+                            case "Pending":
+                               <button class="btn btn-primary form-control" type="submit" asp-action="InProcess" asp-controller="Order">Mark as In Process</button>
+                                break;
+                            case "Inprocess":
+                              <button class="btn btn-warning form-control border-danger" type="submit" asp-action="Shipped" asp-controller="Order">Update The Process To Shipped</button>
+                                break;
+
+                            case "Completed":
+                                <span class="btn btn-warning form-control border-danger">Order Completed</span>
+                                break;
+
+                            default:
+                                @if (Model.UserOrderHeader.OrderState == "Completed")
+                                {
+                                    <button class="btn btn-secondary">Transcaction Has Completed </button>
+                                    break;
+                                }
+                                else
+                                {
+                            <button class="btn btn-warning form-control border-danger">Upddate to  Comleted Status</button>
+                                    break;
+                                }
+
+                        }
+
+               
+            }
+            else
+            {
+                <button class="btn btn-info">Order State: @Model.UserOrderHeader.OrderState</button>
+            }
         </div>
-    </div>
+
 </div>
+</form>
