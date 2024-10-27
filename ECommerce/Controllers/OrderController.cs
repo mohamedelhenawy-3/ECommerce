@@ -7,6 +7,7 @@ using DataBaseAccess;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using Stripe.Checkout;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 
 
 namespace ECommerce.Controllers
@@ -14,8 +15,10 @@ namespace ECommerce.Controllers
     public class OrderController : Controller
     {
         private readonly AppDBContext _context;
+
         [BindProperty]
         public OrderDetialsViewModel OrderDetailsVM { get; set; }
+
 
         public OrderController(AppDBContext context)
         {
@@ -221,7 +224,7 @@ namespace ECommerce.Controllers
             _context.UserOrderHeaders.Remove(orderProcessCancel);
             _context.SaveChanges();
 
-            return RedirectToAction("ShowCart", "Cart");
+            return RedirectToAction("Index", "Home");
         }
 
         public IActionResult OrderHistory(string? Status)
@@ -260,10 +263,46 @@ namespace ECommerce.Controllers
                 UserOrderHeader = _context.UserOrderHeaders.FirstOrDefault(x => x.Id == orderId),
                 OrderDetails = _context.OrderDetails
                     .Include(x => x.Product)
+                    .ThenInclude(p => p.ImgUrls)
                     .Where(x => x.OrderHeaderId == orderId)
                     .ToList()
             };
             return View(OrderDetailsVM);
+        }
+
+
+        [HttpPost]
+        public IActionResult InProcess()
+        {
+            var updateorder = _context.UserOrderHeaders
+                .FirstOrDefault(x => x.Id == OrderDetailsVM.UserOrderHeader.Id);
+
+            if (updateorder != null)
+            {
+                updateorder.OrderState = UpdateOrderState.OrderStatusInProcess;
+                _context.Update(updateorder);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("OrderDetails", new { orderId = OrderDetailsVM.UserOrderHeader.Id });
+        }
+
+        [HttpPost]
+        public IActionResult Shipped()
+        {
+            var updateorder = _context.UserOrderHeaders
+                .FirstOrDefault(x => x.Id == OrderDetailsVM.UserOrderHeader.Id);
+
+            if (updateorder != null)
+            {
+                updateorder.OrderState = UpdateOrderState.OrderStatusShipped;
+                updateorder.Carrier = OrderDetailsVM.UserOrderHeader.Carrier;
+                updateorder.TrackingNumber = OrderDetailsVM.UserOrderHeader.TrackingNumber;
+                _context.Update(updateorder);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("OrderDetails", new { orderId = OrderDetailsVM.UserOrderHeader.Id });
         }
 
     }

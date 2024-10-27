@@ -12,6 +12,8 @@ namespace ModelClasses
     {
         [Key]
         public int Id { get; set; }
+
+
         public string UserId { get; set; }
         [ForeignKey("UserId")]
         public ApplicationUser AppUser { get; set; }
@@ -22,7 +24,7 @@ namespace ModelClasses
         [Required]
         public double TotalAmount { get; set; }
 
-        public string TrackingNumber { get; set; }
+        public string? TrackingNumber { get; set; }
 
         public string? Carrier { get; set; }
 
