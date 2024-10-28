@@ -964,3 +964,17 @@ hr {
         width: 100%;
         padding: 10px;
     }
+
+ 
+    .custom-btn-color {
+        background-color: #7AB2D3; /* Set the background color */
+        border-color: #7AB2D3; /* Set the border color */
+        color: white; /* Set the text color to white for better contrast */
+    }
+
+    .custom-btn-color:hover {
+        background-color: #5A91B1; /* Slightly darker shade for hover effect */
+        border-color: #5A91B1;
+    }
+
+  

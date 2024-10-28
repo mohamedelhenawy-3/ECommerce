@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using Stripe.Checkout;
 using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
+using Stripe;
 
 
 namespace ECommerce.Controllers
@@ -112,6 +113,7 @@ namespace ECommerce.Controllers
                 OVM.UserOrderHeader.PostalCode = orderviewmodel.UserOrderHeader.PostalCode;
                 OVM.UserOrderHeader.Name = orderviewmodel.UserOrderHeader.Name;
                 OVM.UserOrderHeader.DateOfOrder = DateTime.Now;
+                OVM.UserOrderHeader.DateOfShipping = orderviewmodel.UserOrderHeader.DateOfShipping;
                 OVM.UserOrderHeader.PhoneNumber = orderviewmodel.UserOrderHeader.PhoneNumber;
                 OVM.UserOrderHeader.OrderState = "Pending";
                 OVM.UserOrderHeader.PaymentState = "Not Paid";
@@ -160,6 +162,11 @@ namespace ECommerce.Controllers
                     // Create Stripe payment session
                     var service = new SessionService();
                     Session session =  service.Create(options); // Ensure you're using async method
+                    var newOrder = _context.UserOrderHeaders.FirstOrDefault(x => x.Id == OVM.UserOrderHeader.Id);
+                    newOrder.StripeSessionId = session.Id;
+                    newOrder.StripePaymentIntendId = session.PaymentIntentId;
+                    _context.UserOrderHeaders.Update(newOrder);
+                    _context.SaveChanges();
                     Console.WriteLine("Stripe session created successfully: " + session);
 
                     Response.Headers.Add("Location", session.Url);
@@ -192,10 +199,17 @@ namespace ECommerce.Controllers
 
             if (orderProcess != null)
             {
-                if (orderProcess.PaymentState == "Not Paid")
+                if (orderProcess.PaymentState == UpdateOrderState.PaymentStatusNotPaid)
                 {
-                    orderProcess.PaymentState = "Paid";
-                    orderProcess.PaymentProcessDate = DateTime.Now;
+                    var service = new SessionService();
+                    Session session = service.Get(orderProcess.StripeSessionId);
+                    if(session.PaymentStatus.ToLower() == UpdateOrderState.PaymentStatusPaid.ToLower())
+                    {
+                        orderProcess.PaymentState = UpdateOrderState.PaymentStatusPaid;
+                        orderProcess.PaymentProcessDate = DateTime.Now;
+                        orderProcess.StripePaymentIntendId = session.PaymentIntentId;
+                    }
+                
                 }
             }
             foreach (var item in removeCart)
@@ -212,8 +226,9 @@ namespace ECommerce.Controllers
             ViewBag.OrderId = id;
             _context.UserCarts.RemoveRange(removeCart);
             _context.SaveChanges();
-            var count = _context.UserCarts.Where(u => u.UserId.Contains(userId)).ToList().Count();
-            HttpContext.Session.SetInt32(CartCount.sessionCount, count);
+            //var count = _context.UserCarts.Where(u => u.UserId.Contains(userId)).ToList().Count();
+            //HttpContext.Session.SetInt32(CartCount.sessionCount, count);
+            HttpContext.Session.Clear();
 
 
             return View();
@@ -305,5 +320,50 @@ namespace ECommerce.Controllers
             return RedirectToAction("OrderDetails", new { orderId = OrderDetailsVM.UserOrderHeader.Id });
         }
 
+        [HttpPost]
+        public IActionResult Delivered()
+        {
+            var updateorder = _context.UserOrderHeaders
+                .FirstOrDefault(x => x.Id == OrderDetailsVM.UserOrderHeader.Id);
+
+            if (updateorder != null)
+            {
+                updateorder.OrderState = UpdateOrderState.OrderStatusCompleted;
+                _context.Update(updateorder);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("OrderDetails", new { orderId = OrderDetailsVM.UserOrderHeader.Id });
+        }
+
+
+
+        [HttpPost]
+        public IActionResult Canceled(int orderId)
+        {
+            var updateorder = _context.UserOrderHeaders
+                .FirstOrDefault(x => x.Id == orderId);
+
+            if (updateorder != null)
+            {
+                if(updateorder.PaymentState == UpdateOrderState.PaymentStatusPaid)
+                {
+                    var options = new RefundCreateOptions
+                    {
+                        Reason = RefundReasons.RequestedByCustomer,
+                        PaymentIntent = updateorder.StripePaymentIntendId
+                    };
+                    var service = new RefundService();
+                    Refund refund = service.Create(options);
+                    updateorder.OrderState = UpdateOrderState.OrderStatusCanceled;
+                    updateorder.PaymentState = UpdateOrderState.PaymentStatusRefunded;
+                }
+
+                _context.Update(updateorder);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("OrderDetails", new { orderId = orderId });
+        }
     }
 }
