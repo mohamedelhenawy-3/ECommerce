@@ -19,8 +19,8 @@ namespace ModelClasses
         public ApplicationUser AppUser { get; set; }
         [Required]
         public DateTime DateOfOrder { get; set; }
-        [Required]
-        public DateTime DateOfShipping { get; set; }
+
+        public DateTime? DateOfShipping { get; set; }
         [Required]
         public double TotalAmount { get; set; }
 
@@ -29,6 +29,9 @@ namespace ModelClasses
         public string? Carrier { get; set; }
 
         public string? OrderState { get; set; }
+        public string? StripeSessionId { get; set; }
+
+        public string? StripePaymentIntendId { get; set; }
 
         public string? PaymentState { get; set; }
 
