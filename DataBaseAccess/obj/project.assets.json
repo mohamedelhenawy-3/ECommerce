@@ -9886,11 +9886,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ECommerceSolution\\DataBaseAccess\\DataBaseAccess.csproj",
+      "projectUniqueName": "F:\\ECommeceApp\\ECommerce\\DataBaseAccess\\DataBaseAccess.csproj",
       "projectName": "DataBaseAccess",
-      "projectPath": "F:\\ECommerceSolution\\DataBaseAccess\\DataBaseAccess.csproj",
+      "projectPath": "F:\\ECommeceApp\\ECommerce\\DataBaseAccess\\DataBaseAccess.csproj",
       "packagesPath": "C:\\Users\\ELhenawy\\.nuget\\packages\\",
-      "outputPath": "F:\\ECommerceSolution\\DataBaseAccess\\obj\\",
+      "outputPath": "F:\\ECommeceApp\\ECommerce\\DataBaseAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ELhenawy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9908,8 +9908,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\ECommerceSolution\\ModelClasses\\ModelClasses.csproj": {
-              "projectPath": "F:\\ECommerceSolution\\ModelClasses\\ModelClasses.csproj"
+            "F:\\ECommeceApp\\ECommerce\\ModelClasses\\ModelClasses.csproj": {
+              "projectPath": "F:\\ECommeceApp\\ECommerce\\ModelClasses\\ModelClasses.csproj"
             }
           }
         }

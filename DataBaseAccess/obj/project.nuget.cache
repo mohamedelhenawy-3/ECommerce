@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HSPZtZK08TM=",
+  "dgSpecHash": "zWoB9SnkWlI=",
   "success": true,
-  "projectFilePath": "F:\\ECommerceSolution\\DataBaseAccess\\DataBaseAccess.csproj",
+  "projectFilePath": "F:\\ECommeceApp\\ECommerce\\DataBaseAccess\\DataBaseAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ELhenawy\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ELhenawy\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

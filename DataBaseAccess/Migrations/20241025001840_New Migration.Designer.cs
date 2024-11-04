@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataBaseAccess.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20241023232425_miartion2")]
-    partial class miartion2
+    [Migration("20241025001840_New Migration")]
+    partial class NewMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -406,11 +406,11 @@ namespace DataBaseAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Carrier")
+                    b.Property<string>("CIty")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("City")
-                        .IsRequired()
+                    b.Property<string>("Carrier")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DateOfOrder")
@@ -452,6 +452,7 @@ namespace DataBaseAccess.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("TrackingNumber")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TransactId")

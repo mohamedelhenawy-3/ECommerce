@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataBaseAccess.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20241024121158_update models")]
-    partial class updatemodels
+    [Migration("20241025011215_update tracking")]
+    partial class updatetracking
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -452,7 +452,6 @@ namespace DataBaseAccess.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("TrackingNumber")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TransactId")

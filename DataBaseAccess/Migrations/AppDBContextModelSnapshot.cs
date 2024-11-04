@@ -413,7 +413,7 @@ namespace DataBaseAccess.Migrations
                     b.Property<DateTime>("DateOfOrder")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DateOfShipping")
+                    b.Property<DateTime?>("DateOfShipping")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("DeliveryStreetAddress")
@@ -445,11 +445,16 @@ namespace DataBaseAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("StripePaymentIntendId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StripeSessionId")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<double>("TotalAmount")
                         .HasColumnType("float");
 
                     b.Property<string>("TrackingNumber")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TransactId")

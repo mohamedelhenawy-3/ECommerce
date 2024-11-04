@@ -11,5 +11,6 @@ namespace ModelClasses.ViewModels
         public List<Product> Products { get; set; }
         public List<Category> Categories { get; set; }
         public  string SearchByName { get; set; }
+        //public List<Product> BestSellers { get; set; }
     }
 }

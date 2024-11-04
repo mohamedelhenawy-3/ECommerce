@@ -5,16 +5,11 @@
 namespace DataBaseAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class miartion2 : Migration
+    public partial class updatetracking : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "Phonenumber",
-                table: "UserOrderHeaders",
-                newName: "PhoneNumber");
-
             migrationBuilder.AlterColumn<string>(
                 name: "TrackingNumber",
                 table: "UserOrderHeaders",
@@ -27,11 +22,6 @@ namespace DataBaseAccess.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "PhoneNumber",
-                table: "UserOrderHeaders",
-                newName: "Phonenumber");
-
             migrationBuilder.AlterColumn<string>(
                 name: "TrackingNumber",
                 table: "UserOrderHeaders",

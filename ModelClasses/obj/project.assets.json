@@ -7309,11 +7309,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ECommerceSolution\\ModelClasses\\ModelClasses.csproj",
+      "projectUniqueName": "F:\\ECommeceApp\\ECommerce\\ModelClasses\\ModelClasses.csproj",
       "projectName": "ModelClasses",
-      "projectPath": "F:\\ECommerceSolution\\ModelClasses\\ModelClasses.csproj",
+      "projectPath": "F:\\ECommeceApp\\ECommerce\\ModelClasses\\ModelClasses.csproj",
       "packagesPath": "C:\\Users\\ELhenawy\\.nuget\\packages\\",
-      "outputPath": "F:\\ECommerceSolution\\ModelClasses\\obj\\",
+      "outputPath": "F:\\ECommeceApp\\ECommerce\\ModelClasses\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ELhenawy\\AppData\\Roaming\\NuGet\\NuGet.Config",
