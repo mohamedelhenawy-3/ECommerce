@@ -27,7 +27,7 @@ namespace ECommerce.Controllers
         public IActionResult Category()
         {
             var categories = _categoryrepo.GetAllCategory();
-            return View(categories);
+            return View("Category", categories);
         }
 
 
