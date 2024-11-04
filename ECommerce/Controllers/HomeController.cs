@@ -22,19 +22,20 @@ namespace ECommerce.Controllers
         }
 
 
-        public IActionResult Index(string? SearchByName ,string? SearchByCategory)
+        public IActionResult Index(string? SearchByName, string? SearchByCategory)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var count = _context.UserCarts.Where(x => x.UserId.Contains(userId)).Count();
             HttpContext.Session.SetInt32(CartCount.sessionCount, count);
 
             HomeViewModel HomeViewmodel = new HomeViewModel();
-            if(SearchByName != null)
+            if (SearchByName != null)
             {
                 HomeViewmodel.Products = _context.Products.Include(v => v.ImgUrls).Where(v => EF.Functions.Like(v.Name, $"%{SearchByName}")).ToList();
                 HomeViewmodel.Categories = _context.Categories.ToList();
 
-            }else if(SearchByCategory != null)
+            }
+            else if (SearchByCategory != null)
             {
                 var category = _context.Categories.FirstOrDefault(c => c.Name == SearchByCategory);
                 HomeViewmodel.Products = _context.Products.Include(v => v.ImgUrls).Where(c => c.CategoryId == category.Id).ToList();
@@ -53,7 +54,9 @@ namespace ECommerce.Controllers
             return View(HomeViewmodel);
         }
 
-   
+
+
+
         public IActionResult Privacy()
         {
             return View();

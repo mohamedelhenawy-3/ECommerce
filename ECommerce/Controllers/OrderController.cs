@@ -13,6 +13,7 @@ using Stripe;
 
 namespace ECommerce.Controllers
 {
+    [Authorize]
     public class OrderController : Controller
     {
         private readonly AppDBContext _context;

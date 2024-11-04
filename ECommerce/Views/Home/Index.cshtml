@@ -48,65 +48,19 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Filter -->
-            <div class="card mb-3">
-                <div class="card-header">Filter</div>
-                <div class="card-body">
-                    <form>
-                        <div class="mb-3">
-                            <label>Brand</label>
-                            <select class="form-select">
-                                <option>Wallmart</option>
-                                <option>Catseye</option>
-                                <option>Moonsoon</option>
-                                <option>Textmart</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label>Color</label>
-                            <select class="form-select">
-                                <option>White</option>
-                                <option>Black</option>
-                                <option>Red</option>
-                                <option>Green</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label>Type</label>
-                            <select class="form-select">
-                                <option>Small</option>
-                                <option>Medium</option>
-                                <option>Large</option>
-                                <option>Extra Large</option>
-                            </select>
-                        </div>
-                        <!-- Filter Button Styled -->
-                        <button class="btn btn-primary custom-btn-color" type="submit">Filter</button>
-                    </form>
-                </div>
-            </div>
-
             <!-- Best Seller -->
             <div class="card">
                 <div class="card-header">Best Seller</div>
                 <div class="card-body">
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <img src="https://www.bootdey.com/image/250x220/FFB6C1/000000" class="img-fluid" alt="Item One" />
-                            <h5 class="mt-2">Item One Title</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <img src="https://www.bootdey.com/image/250x220/A2BE2/000000" class="img-fluid" alt="Item Two" />
-                            <h5 class="mt-2">Item Two Title</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <img src="https://www.bootdey.com/image/250x220/6495ED/000000" class="img-fluid" alt="Item Three" />
-                            <h5 class="mt-2">Item Three Title</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </a>
+                        @foreach (var item in Model.BestSellers)
+                        {
+                            <a href="@Url.Action("Details", "Product", new { id = item.Id })" class="list-group-item list-group-item-action">
+                                <img src="@item.ImgUrls.FirstOrDefault()?.ImageUrl" class="img-fluid" alt="@item.Name" />
+                                <h5 class="mt-2">@item.Name</h5>
+                                <p>@item.Description</p>
+                            </a>
+                        }
                     </div>
                 </div>
             </div>
