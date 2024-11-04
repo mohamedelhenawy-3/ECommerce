@@ -1,0 +1,201 @@
+@model ECommerce.ViewModel.CartViewModel;
+
+
+
+<section class="pt-5 pb-5">
+    <div class="container">
+        <div class="row w-100">
+            <div class="col-lg-12 col-md-12 col-12">
+                <h3 class="display-5 mb-2 text-center">Shopping Cart</h3>
+                <p class="mb-5 text-center">
+                    <i class="text-info font-weight-bold">3</i> items in your cart
+                </p>
+                <table id="shoppingCart" class="table table-condensed table-responsive">
+                    <thead>
+                        <tr>
+                            <th style="width:60%">Product</th>
+                            <th style="width:12%">Price</th>
+                            <th style="width:10%">Quantity</th>
+                            <th style="width:16%"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.ProductList)
+                        {
+                            <tr>
+                                <td data-th="Product">
+                                    <div class="row">
+                                        <div class="col-md-3 text-left">
+                                            @if (item.Product.ImgUrls != null && item.Product.ImgUrls.Any())
+                                            {
+                                                <!-- Displaying the first image from the collection -->
+                                                <img src="~/Images/@item.Product.ImgUrls.First().ImageUrl" alt="Product Image" class="img-fluid d-none d-md-block rounded mb-2 shadow">
+                                            }
+                                            else
+                                            {
+                                                <p>No image available</p>
+                                            }
+                                        </div>
+                                        <div class="col-md-9 text-left mt-sm-2">
+                                            <h4>@item.Product.Name</h4>
+                                            <p class="font-weight-light">
+                                                Brand:
+                                                @if (item.Product.Category != null)
+                                                {
+                                                    @item.Product.Category.Name
+                                                }
+                                                else
+                                                {
+                                                    <span>No category</span>
+                                                }
+                                            </p>
+                                            <p class="font-weight-light">
+                                                Brand:
+                                                @if (item.Product.Description != null)
+                                                {
+                                                    @item.Product.Description
+                                                }
+                                                else
+                                                {
+                                                    <span>No Description</span>
+                                                }
+                                            </p>
+                                        </div>
+
+
+                                    </div>
+                                </td>
+                                <td data-th="Price">@item.Product.Price</td>
+                                <td data-th="Quantity">
+                                    <input type="number" class="form-control form-control-lg text-center" value="@item.quantity">
+                                </td>
+                                <td class="actions" data-th="">
+                                    <div class="text-right">
+                                        <ul class="list-inline m-0">
+                                            <li class="list-inline-item">
+                                                <button class="btn btn-primary btn-lg rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Add">
+                                                    <i class="fa fa-table fa-lg"></i>
+                                                </button>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <button class="btn btn-success btn-lg rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                    <i class="fa fa-edit fa-lg"></i>
+                                                </button>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <button class="btn btn-danger btn-lg rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                    <i class="fa fa-trash fa-lg"></i>
+                                                </button>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+
+
+
+
+                    </tbody>
+                </table>
+                <div class="float-right text-right">
+                    <h4>Subtotal:</h4>
+
+                       <span><strong>@Model.TotalPrice.ToString("C")</strong></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 d-flex align-items-center">
+            <div class="col-sm-6 order-md-2 text-right">
+                <a href="catalog.html" class="btn btn-primary mb-4 btn-lg pl-5 pr-5">Checkout</a>
+            </div>
+            <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
+                <a href="catalog.html">
+                    <i class="fas fa-arrow-left mr-2"></i> Continue Shopping
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+       @if (HttpContextAccessor.HttpContext.Session.GetInt32(CartCount.sessionCount) != null)
+       {
+           <li class="nav-item">
+               <a class="nav-link text-dark" asp-controller="Cart" asp-action="ShowCart" title="View Cart">
+                   <i class="bi bi-cart" style="font-size: 1.5em;"></i>
+                   <span class="badge bg-danger" id="cart-count">@ViewBag.CartItemCount</span> <!-- Change here -->
+               </a>
+           </li>
+       }
+       else
+       {
+           <li style="white;">
+               <a href="#" class="nav-link">
+                   <i class="fas fa-shopping-cart"></i> &nbsp; (0)
+               </a>
+           </li>
+       }
+//////////////////////////////////////////////////////
+<div class="container pb-5 mb-2">
+    <!-- Alert-->
+    <div class="alert alert-info alert-dismissible fade show text-center mb-30"><span class="alert-close" data-dismiss="alert"></span><i class="fe-icon-award"></i>&nbsp;&nbsp;With this purchase you will earn <strong>2,549</strong> Reward Points.</div>
+ 
+    <!-- Cart Item-->
+    <div class="cart-item d-md-flex justify-content-between"><span class="remove-item"><i class="fa fa-times"></i></span>
+
+          @foreach (var item in Model.ProductList){
+
+   
+        <div class="px-3 my-3">
+            <a class="cart-item-product" href="#">
+                <div class="cart-item-product-thumb">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="Product">
+                    </div>
+                <div class="cart-item-product-info">
+                    <h4 class="cart-item-product-title">HP LaserJet Pro Laser Printer</h4><span><strong>Type:</strong> Laser</span><span><strong>Color:</strong> White</span>
+                </div>
+            </a>
+        </div>
+        <div class="px-3 my-3 text-center">
+            <div class="cart-item-label">Quantity</div>
+            <div class="count-input">
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+            </div>
+        </div>
+        <div class="px-3 my-3 text-center">
+            <div class="cart-item-label">Subtotal</div><span class="text-xl font-weight-medium">$188.50</span>
+        </div>
+        <div class="px-3 my-3 text-center">
+            <div class="cart-item-label">Discount</div><span class="text-xl font-weight-medium">—</span>
+        </div>
+
+             }
+
+    </div>
+
+
+
+
+    <!-- Coupon + Subtotal-->
+    <div class="d-sm-flex justify-content-between align-items-center text-center text-sm-left">
+        <div class="py-2"><span class="d-inline-block align-middle text-sm text-muted font-weight-medium text-uppercase mr-2">Subtotal:</span><span class="d-inline-block align-middle text-xl font-weight-medium">$188.50</span></div>
+    </div>
+    <!-- Buttons-->
+    <hr class="my-2">
+    <div class="row pt-3 pb-5 mb-2">
+        <div class="col-sm-6 mb-3"><a class="btn btn-style-1 btn-secondary btn-block" href="#"><i class="fe-icon-refresh-ccw"></i>&nbsp;Update Cart</a></div>
+        <div class="col-sm-6 mb-3"><a class="btn btn-style-1 btn-primary btn-block" href="checkout-address.html"><i class="fe-icon-credit-card"></i>&nbsp;Checkout</a></div>
+    </div>
+
+
+    </div>

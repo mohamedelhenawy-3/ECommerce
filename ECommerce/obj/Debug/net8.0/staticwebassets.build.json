@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ly/rYIQZopdAZI7v+sgMln2QwrcF1g2iogZk20e9mO0=",
+  "Hash": "WBNjWWem8zOH8MoQYJFENv1H4492a7rYdW/DgQfwvPM=",
   "Source": "ECommerce",
   "BasePath": "_content/ECommerce",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ECommerce\\wwwroot",
       "Source": "ECommerce",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ECommerce.styles.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ECommerce.styles.css",
       "SourceId": "ECommerce",
       "SourceType": "Computed",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "ECommerce.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "F:\\ECommerceSolution\\ECommerce\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ECommerce.styles.css"
+      "OriginalItemSpec": "F:\\ECommeceApp\\ECommerce\\ECommerce\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ECommerce.styles.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ECommerce.bundle.scp.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ECommerce.bundle.scp.css",
       "SourceId": "ECommerce",
       "SourceType": "Computed",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "ECommerce.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "F:\\ECommerceSolution\\ECommerce\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ECommerce.bundle.scp.css"
+      "OriginalItemSpec": "F:\\ECommeceApp\\ECommerce\\ECommerce\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ECommerce.bundle.scp.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\css\\site.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\css\\site.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\favicon.ico",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\favicon.ico",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\02409be2-3d9b-42cb-945b-aa6e4307b05c_photo_5798482901216641024_y.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\02409be2-3d9b-42cb-945b-aa6e4307b05c_photo_5798482901216641024_y.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/02409be2-3d9b-42cb-945b-aa6e4307b05c_photo_5798482901216641024_y.jpg",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\02409be2-3d9b-42cb-945b-aa6e4307b05c_photo_5798482901216641024_y.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\0c405029-1312-4384-91a7-6edac7aca62f_th.jfif",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\0c405029-1312-4384-91a7-6edac7aca62f_th.jfif",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/0c405029-1312-4384-91a7-6edac7aca62f_th.jfif",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\0c405029-1312-4384-91a7-6edac7aca62f_th.jfif"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\17a5d370-b7fd-4af0-85da-3cf43bed1ca0_photo_5798482901216641024_y.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\17a5d370-b7fd-4af0-85da-3cf43bed1ca0_photo_5798482901216641024_y.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/17a5d370-b7fd-4af0-85da-3cf43bed1ca0_photo_5798482901216641024_y.jpg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\17a5d370-b7fd-4af0-85da-3cf43bed1ca0_photo_5798482901216641024_y.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\19bf4091-0796-4bc7-a526-6713da78135f_pexels-elijahsad-3473569.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\19bf4091-0796-4bc7-a526-6713da78135f_pexels-elijahsad-3473569.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/19bf4091-0796-4bc7-a526-6713da78135f_pexels-elijahsad-3473569.jpg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\19bf4091-0796-4bc7-a526-6713da78135f_pexels-elijahsad-3473569.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\1db447c5-9bc7-4823-a00f-505660c75774_pexels-alexandro-david-871783-1835016.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\1db447c5-9bc7-4823-a00f-505660c75774_pexels-alexandro-david-871783-1835016.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/1db447c5-9bc7-4823-a00f-505660c75774_pexels-alexandro-david-871783-1835016.jpg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\1db447c5-9bc7-4823-a00f-505660c75774_pexels-alexandro-david-871783-1835016.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\47d8cbc6-070d-45b7-9378-d65dfbf81b97_th.jfif",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\47d8cbc6-070d-45b7-9378-d65dfbf81b97_th.jfif",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/47d8cbc6-070d-45b7-9378-d65dfbf81b97_th.jfif",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\47d8cbc6-070d-45b7-9378-d65dfbf81b97_th.jfif"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\56e00b4d-9e75-4f53-bdcc-f480dcaa7355_MacBookPro.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\56e00b4d-9e75-4f53-bdcc-f480dcaa7355_MacBookPro.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/56e00b4d-9e75-4f53-bdcc-f480dcaa7355_MacBookPro.jpg",
       "AssetKind": "All",
@@ -226,10 +226,29 @@
       "OriginalItemSpec": "wwwroot\\Images\\56e00b4d-9e75-4f53-bdcc-f480dcaa7355_MacBookPro.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\5f4033dd-f8b6-4507-8652-960d17c99d35_photo_5798482901216641024_y.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\58c25b64-95fd-4d78-8808-52a25b3b5a56_Hp.webp",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/58c25b64-95fd-4d78-8808-52a25b3b5a56_Hp.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\58c25b64-95fd-4d78-8808-52a25b3b5a56_Hp.webp"
+    },
+    {
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\5f4033dd-f8b6-4507-8652-960d17c99d35_photo_5798482901216641024_y.jpg",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/5f4033dd-f8b6-4507-8652-960d17c99d35_photo_5798482901216641024_y.jpg",
       "AssetKind": "All",
@@ -245,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\5f4033dd-f8b6-4507-8652-960d17c99d35_photo_5798482901216641024_y.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\63921ecd-8004-4533-badf-b9b0d2028009_th.jfif",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\63921ecd-8004-4533-badf-b9b0d2028009_th.jfif",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/63921ecd-8004-4533-badf-b9b0d2028009_th.jfif",
       "AssetKind": "All",
@@ -264,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\63921ecd-8004-4533-badf-b9b0d2028009_th.jfif"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\6d817012-614c-4829-859c-493aa5d12bb3_images.jfif",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\6d817012-614c-4829-859c-493aa5d12bb3_images.jfif",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/6d817012-614c-4829-859c-493aa5d12bb3_images.jfif",
       "AssetKind": "All",
@@ -283,10 +302,48 @@
       "OriginalItemSpec": "wwwroot\\Images\\6d817012-614c-4829-859c-493aa5d12bb3_images.jfif"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\70d664c3-e27e-41fa-b21a-95813dbb1cb6_th.jfif",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\6e9e3688-50e5-42c6-b770-d1e9cf7327df_Dell.jfif",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/6e9e3688-50e5-42c6-b770-d1e9cf7327df_Dell.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\6e9e3688-50e5-42c6-b770-d1e9cf7327df_Dell.jfif"
+    },
+    {
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\6ee216c0-8f51-4dea-895e-ef260b91b551_Acer.jpg",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/6ee216c0-8f51-4dea-895e-ef260b91b551_Acer.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\6ee216c0-8f51-4dea-895e-ef260b91b551_Acer.jpg"
+    },
+    {
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\70d664c3-e27e-41fa-b21a-95813dbb1cb6_th.jfif",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/70d664c3-e27e-41fa-b21a-95813dbb1cb6_th.jfif",
       "AssetKind": "All",
@@ -302,10 +359,29 @@
       "OriginalItemSpec": "wwwroot\\Images\\70d664c3-e27e-41fa-b21a-95813dbb1cb6_th.jfif"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\837174c4-f3a3-4681-a193-4ea99584d1d5_photo_5798482901216641023_y.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\82a86762-0411-498a-978d-81d42b1bf2f4_th.jfif",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/82a86762-0411-498a-978d-81d42b1bf2f4_th.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\82a86762-0411-498a-978d-81d42b1bf2f4_th.jfif"
+    },
+    {
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\837174c4-f3a3-4681-a193-4ea99584d1d5_photo_5798482901216641023_y.jpg",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/837174c4-f3a3-4681-a193-4ea99584d1d5_photo_5798482901216641023_y.jpg",
       "AssetKind": "All",
@@ -321,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\837174c4-f3a3-4681-a193-4ea99584d1d5_photo_5798482901216641023_y.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\83f5f405-76c4-40a6-8d5d-9de19a2dcafe_Samsung.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\83f5f405-76c4-40a6-8d5d-9de19a2dcafe_Samsung.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/83f5f405-76c4-40a6-8d5d-9de19a2dcafe_Samsung.jpg",
       "AssetKind": "All",
@@ -340,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\83f5f405-76c4-40a6-8d5d-9de19a2dcafe_Samsung.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\894d3b23-ee01-40f5-a998-63c001746a47_photo_5798482901216641023_y.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\894d3b23-ee01-40f5-a998-63c001746a47_photo_5798482901216641023_y.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/894d3b23-ee01-40f5-a998-63c001746a47_photo_5798482901216641023_y.jpg",
       "AssetKind": "All",
@@ -359,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\894d3b23-ee01-40f5-a998-63c001746a47_photo_5798482901216641023_y.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\9017a31a-7e8a-4a42-b80e-8adbb6ce8e63_photo_5798482901216641025_y.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\9017a31a-7e8a-4a42-b80e-8adbb6ce8e63_photo_5798482901216641025_y.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/9017a31a-7e8a-4a42-b80e-8adbb6ce8e63_photo_5798482901216641025_y.jpg",
       "AssetKind": "All",
@@ -378,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\9017a31a-7e8a-4a42-b80e-8adbb6ce8e63_photo_5798482901216641025_y.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\92d8d036-3031-46e8-a064-299707df91e9_th.jfif",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\92d8d036-3031-46e8-a064-299707df91e9_th.jfif",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/92d8d036-3031-46e8-a064-299707df91e9_th.jfif",
       "AssetKind": "All",
@@ -397,10 +473,29 @@
       "OriginalItemSpec": "wwwroot\\Images\\92d8d036-3031-46e8-a064-299707df91e9_th.jfif"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\b139ca97-e6d2-4dd7-a089-1ba6125a0dc5_photo_5798482901216641023_y.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\9398e44a-e6f1-426d-8923-099202877c11_pexels-photo-4065906.webp",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/9398e44a-e6f1-426d-8923-099202877c11_pexels-photo-4065906.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\9398e44a-e6f1-426d-8923-099202877c11_pexels-photo-4065906.webp"
+    },
+    {
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\b139ca97-e6d2-4dd7-a089-1ba6125a0dc5_photo_5798482901216641023_y.jpg",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/b139ca97-e6d2-4dd7-a089-1ba6125a0dc5_photo_5798482901216641023_y.jpg",
       "AssetKind": "All",
@@ -416,10 +511,29 @@
       "OriginalItemSpec": "wwwroot\\Images\\b139ca97-e6d2-4dd7-a089-1ba6125a0dc5_photo_5798482901216641023_y.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\baffbced-b3e6-421b-9c68-c1a048ce6dab_444457650_374682918932603_3316000475147546547_n.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\b7edf641-7934-461e-b16b-535c632512c7_images.jfif",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/b7edf641-7934-461e-b16b-535c632512c7_images.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\b7edf641-7934-461e-b16b-535c632512c7_images.jfif"
+    },
+    {
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\baffbced-b3e6-421b-9c68-c1a048ce6dab_444457650_374682918932603_3316000475147546547_n.jpg",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/baffbced-b3e6-421b-9c68-c1a048ce6dab_444457650_374682918932603_3316000475147546547_n.jpg",
       "AssetKind": "All",
@@ -435,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\baffbced-b3e6-421b-9c68-c1a048ce6dab_444457650_374682918932603_3316000475147546547_n.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\cd54abaa-3dfc-4626-9f8a-e71b576673ca_pexels-photo-2378138.webp",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\cd54abaa-3dfc-4626-9f8a-e71b576673ca_pexels-photo-2378138.webp",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/cd54abaa-3dfc-4626-9f8a-e71b576673ca_pexels-photo-2378138.webp",
       "AssetKind": "All",
@@ -454,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\cd54abaa-3dfc-4626-9f8a-e71b576673ca_pexels-photo-2378138.webp"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\d1f4ea52-69ae-42d8-b027-1837fa9de883_photo_5798482901216641025_y.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\d1f4ea52-69ae-42d8-b027-1837fa9de883_photo_5798482901216641025_y.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/d1f4ea52-69ae-42d8-b027-1837fa9de883_photo_5798482901216641025_y.jpg",
       "AssetKind": "All",
@@ -473,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\d1f4ea52-69ae-42d8-b027-1837fa9de883_photo_5798482901216641025_y.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\d292331a-5552-4de7-a3e2-ccbaddfa6f8c_th.jfif",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\d292331a-5552-4de7-a3e2-ccbaddfa6f8c_th.jfif",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/d292331a-5552-4de7-a3e2-ccbaddfa6f8c_th.jfif",
       "AssetKind": "All",
@@ -492,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\d292331a-5552-4de7-a3e2-ccbaddfa6f8c_th.jfif"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\d3fc5e92-b00e-4f74-a607-304f2373013f_Acer.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\d3fc5e92-b00e-4f74-a607-304f2373013f_Acer.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/d3fc5e92-b00e-4f74-a607-304f2373013f_Acer.jpg",
       "AssetKind": "All",
@@ -511,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\d3fc5e92-b00e-4f74-a607-304f2373013f_Acer.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\d9e34537-1b2a-4ca4-8bc6-2e081784cf0e_Dell.jfif",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\d9e34537-1b2a-4ca4-8bc6-2e081784cf0e_Dell.jfif",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/d9e34537-1b2a-4ca4-8bc6-2e081784cf0e_Dell.jfif",
       "AssetKind": "All",
@@ -530,10 +644,29 @@
       "OriginalItemSpec": "wwwroot\\Images\\d9e34537-1b2a-4ca4-8bc6-2e081784cf0e_Dell.jfif"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\e514ffea-2cd3-4ed2-bbe0-da84942232dd_photo_5798482901216641023_y.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\df0eddbc-0250-4ccf-8d35-2317f678ef46_MacBookPro.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/df0eddbc-0250-4ccf-8d35-2317f678ef46_MacBookPro.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\df0eddbc-0250-4ccf-8d35-2317f678ef46_MacBookPro.jpg"
+    },
+    {
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\e514ffea-2cd3-4ed2-bbe0-da84942232dd_photo_5798482901216641023_y.jpg",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/e514ffea-2cd3-4ed2-bbe0-da84942232dd_photo_5798482901216641023_y.jpg",
       "AssetKind": "All",
@@ -549,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\e514ffea-2cd3-4ed2-bbe0-da84942232dd_photo_5798482901216641023_y.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\e96badea-d224-46bd-94a4-4ccbb66a8469_pexels-photo-198192.webp",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\e96badea-d224-46bd-94a4-4ccbb66a8469_pexels-photo-198192.webp",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/e96badea-d224-46bd-94a4-4ccbb66a8469_pexels-photo-198192.webp",
       "AssetKind": "All",
@@ -568,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\e96badea-d224-46bd-94a4-4ccbb66a8469_pexels-photo-198192.webp"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\Images\\ef89afff-1a8e-4753-99e8-e1a39a5c9504_444457650_374682918932603_3316000475147546547_n.jpg",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\ef89afff-1a8e-4753-99e8-e1a39a5c9504_444457650_374682918932603_3316000475147546547_n.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "Images/ef89afff-1a8e-4753-99e8-e1a39a5c9504_444457650_374682918932603_3316000475147546547_n.jpg",
       "AssetKind": "All",
@@ -587,10 +720,29 @@
       "OriginalItemSpec": "wwwroot\\Images\\ef89afff-1a8e-4753-99e8-e1a39a5c9504_444457650_374682918932603_3316000475147546547_n.jpg"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\js\\site.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\Images\\f1c540f9-b0b9-4ee1-86bc-bde184a78296_jiiji.txt",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/f1c540f9-b0b9-4ee1-86bc-bde184a78296_jiiji.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\f1c540f9-b0b9-4ee1-86bc-bde184a78296_jiiji.txt"
+    },
+    {
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\js\\site.js",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -606,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -625,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -644,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -663,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -682,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -701,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -720,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -739,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -758,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -777,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -796,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -815,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -834,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -853,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -872,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -891,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -910,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -929,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -948,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -967,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -986,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1005,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1024,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1043,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1062,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1081,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1100,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1119,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1138,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1157,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1176,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1195,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1214,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1233,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1252,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1271,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1290,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1309,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1328,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1347,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1366,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1385,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1404,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1423,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1442,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1461,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1480,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1499,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1518,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1537,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1556,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1575,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1594,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1613,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1632,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1651,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1670,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\ECommerceSolution\\ECommerce\\wwwroot\\",
+      "ContentRoot": "F:\\ECommeceApp\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

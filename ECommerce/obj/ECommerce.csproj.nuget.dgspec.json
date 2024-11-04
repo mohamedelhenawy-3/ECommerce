@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\ECommerceSolution\\ECommerce\\ECommerce.csproj": {}
+    "F:\\ECommeceApp\\ECommerce\\ECommerce\\ECommerce.csproj": {}
   },
   "projects": {
-    "F:\\ECommerceSolution\\DataBaseAccess\\DataBaseAccess.csproj": {
+    "F:\\ECommeceApp\\ECommerce\\DataBaseAccess\\DataBaseAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ECommerceSolution\\DataBaseAccess\\DataBaseAccess.csproj",
+        "projectUniqueName": "F:\\ECommeceApp\\ECommerce\\DataBaseAccess\\DataBaseAccess.csproj",
         "projectName": "DataBaseAccess",
-        "projectPath": "F:\\ECommerceSolution\\DataBaseAccess\\DataBaseAccess.csproj",
+        "projectPath": "F:\\ECommeceApp\\ECommerce\\DataBaseAccess\\DataBaseAccess.csproj",
         "packagesPath": "C:\\Users\\ELhenawy\\.nuget\\packages\\",
-        "outputPath": "F:\\ECommerceSolution\\DataBaseAccess\\obj\\",
+        "outputPath": "F:\\ECommeceApp\\ECommerce\\DataBaseAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ELhenawy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\ECommerceSolution\\ModelClasses\\ModelClasses.csproj": {
-                "projectPath": "F:\\ECommerceSolution\\ModelClasses\\ModelClasses.csproj"
+              "F:\\ECommeceApp\\ECommerce\\ModelClasses\\ModelClasses.csproj": {
+                "projectPath": "F:\\ECommeceApp\\ECommerce\\ModelClasses\\ModelClasses.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "F:\\ECommerceSolution\\ECommerce\\ECommerce.csproj": {
+    "F:\\ECommeceApp\\ECommerce\\ECommerce\\ECommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ECommerceSolution\\ECommerce\\ECommerce.csproj",
+        "projectUniqueName": "F:\\ECommeceApp\\ECommerce\\ECommerce\\ECommerce.csproj",
         "projectName": "ECommerce",
-        "projectPath": "F:\\ECommerceSolution\\ECommerce\\ECommerce.csproj",
+        "projectPath": "F:\\ECommeceApp\\ECommerce\\ECommerce\\ECommerce.csproj",
         "packagesPath": "C:\\Users\\ELhenawy\\.nuget\\packages\\",
-        "outputPath": "F:\\ECommerceSolution\\ECommerce\\obj\\",
+        "outputPath": "F:\\ECommeceApp\\ECommerce\\ECommerce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ELhenawy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -110,8 +110,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\ECommerceSolution\\DataBaseAccess\\DataBaseAccess.csproj": {
-                "projectPath": "F:\\ECommerceSolution\\DataBaseAccess\\DataBaseAccess.csproj"
+              "F:\\ECommeceApp\\ECommerce\\DataBaseAccess\\DataBaseAccess.csproj": {
+                "projectPath": "F:\\ECommeceApp\\ECommerce\\DataBaseAccess\\DataBaseAccess.csproj"
               }
             }
           }
@@ -159,7 +159,7 @@
             },
             "Stripe.net": {
               "target": "Package",
-              "version": "[46.2.1, )"
+              "version": "[43.3.0, )"
             }
           },
           "imports": [
@@ -185,14 +185,14 @@
         }
       }
     },
-    "F:\\ECommerceSolution\\ModelClasses\\ModelClasses.csproj": {
+    "F:\\ECommeceApp\\ECommerce\\ModelClasses\\ModelClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ECommerceSolution\\ModelClasses\\ModelClasses.csproj",
+        "projectUniqueName": "F:\\ECommeceApp\\ECommerce\\ModelClasses\\ModelClasses.csproj",
         "projectName": "ModelClasses",
-        "projectPath": "F:\\ECommerceSolution\\ModelClasses\\ModelClasses.csproj",
+        "projectPath": "F:\\ECommeceApp\\ECommerce\\ModelClasses\\ModelClasses.csproj",
         "packagesPath": "C:\\Users\\ELhenawy\\.nuget\\packages\\",
-        "outputPath": "F:\\ECommerceSolution\\ModelClasses\\obj\\",
+        "outputPath": "F:\\ECommeceApp\\ECommerce\\ModelClasses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ELhenawy\\AppData\\Roaming\\NuGet\\NuGet.Config",
