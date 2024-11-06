@@ -52,25 +52,18 @@ namespace ECommerce.Controllers
             {
                 foreach (var image in productvm.Images)
                 {
-                    // Check if the file name contains "Home" (additional logic can be added here if needed)
                     if (image.FileName.Contains("Home"))
                     {
                         homeImgUrl = UploadFile(image);
-                        break; // Assuming only the first image is used as the Home image
+                        break; 
                     }
-                }
-
-                   
+                }   
             }
-
-            // Assign the HomeImgUrl to the Product
             productvm.Product.HomeImgUrl = homeImgUrl;
-
-            // Add the new product to the database
             await _app.AddAsync(productvm.Product);
             await _app.SaveChangesAsync();
 
-            // Retrieve the newly created product along with its category
+           
             var newProduct = await _app.Products.Include(u => u.Category)
                                                 .FirstOrDefaultAsync(s => s.Name == productvm.Product.Name);
             productvm.Inventories.Name = newProduct.Name;
@@ -82,7 +75,7 @@ namespace ECommerce.Controllers
             {
                 foreach (var image in productvm.Images)
                 {
-                    // Check if the file name contains "Home" (additional logic can be added here if needed)
+              
                     string Tempfile = image.FileName;
                     if (!image.FileName.Contains("Home"))
                     {

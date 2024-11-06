@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ModelClasses.Product>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+                <td>@product.Category?.Name ?? "No Category"</td>
+                <td>
+                    @if (product.ImgUrls != null && product.ImgUrls.Any())
+                    {
+                        var firstImage = product.ImgUrls.FirstOrDefault();
+                        <img src="~/Images/@firstImage.ImageUrl" alt="Product Image" width="150" height="100" />
+                    }
+                    else
+                    {
+                        <p>No Image</p>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-Id="@product.Id" class="btn btn-primary">Edit</a>
+                    <a asp-action="Delete" asp-route-Id="@product.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

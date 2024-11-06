@@ -1,10 +1,12 @@
 ﻿using DataBaseAccess;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using ModelClasses;
 using ModelClasses.ViewModels;
 using System.Security.Claims;
+using System.Runtime.Intrinsics.Arm;
 
 namespace ECommerce.Controllers
 {
@@ -22,6 +24,51 @@ namespace ECommerce.Controllers
             this._context = context;
 
         }
+        [HttpGet]
+        [Authorize(Roles = "Admin")]
+        public IActionResult AddAdmin()
+        {
+            return View();
+        }
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> AddAdmin(RegisterViewModel registerviewmodel)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(registerviewmodel);
+            }
+
+            ApplicationUser appuser = new ApplicationUser
+            {
+                UserName = registerviewmodel.Email,  // Use Email as Username
+                Email = registerviewmodel.Email,
+                FirstName = registerviewmodel.FirstName,
+                LastName = registerviewmodel.LastName,
+                Address = registerviewmodel.Address
+            };
+
+            IdentityResult result = await _usermanager.CreateAsync(appuser, registerviewmodel.Password);
+            if (result.Succeeded)
+            {
+                // Add user to the "Admin" role
+                await _usermanager.AddToRoleAsync(appuser, "Admin");
+
+                // Do not sign in the new admin account
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+                return View(registerviewmodel);
+            }
+        }
+
+
+
 
         public IActionResult Index()
         {
@@ -122,6 +169,8 @@ namespace ECommerce.Controllers
                                                          // or 
                                                          // return RedirectToAction("Index", "Home"); // Redirect to home page
         }
+
+      
 
     }
 }

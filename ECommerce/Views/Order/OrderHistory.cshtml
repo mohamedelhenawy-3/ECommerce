@@ -5,8 +5,10 @@
     var Pending = "text-muted";
     var Inprocess = "text-muted";
     var Shipped = "text-muted";
+    var Canceled = "text-muted";
     var Completed = "text-muted";
     var Approved = "text-muted";
+
     var All = "text-muted";
 
     switch (Status)
@@ -25,6 +27,9 @@
             break;
         case "Approved":
             Approved = "active text-white bg-primary";
+            break;
+        case "Canceled":
+            Canceled = "active text-white bg-primary";
             break;
         default:
             All = "active text-white bg-primary";

@@ -168,15 +168,20 @@
                             </div>
                             <div>
                                 <div>
-                                    @if (Model.UserOrderHeader.OrderState != "Completed" && User.IsInRole("Admin") && Model.UserOrderHeader.OrderState != "Canceled")
+                                    @if (Model.UserOrderHeader.OrderState != "Completed" &&
+                                    Model.UserOrderHeader.OrderState != "Canceled" &&
+                                    User.IsInRole("Admin"))
                                     {
-                                 
-                                            <a class="btn btn-danger form-control" asp-controller="Order" asp-action="Canceled" asp-route-orderId="@Model.UserOrderHeader.Id">Cancel</a>
-                                     
+                                        <form asp-controller="Order" asp-action="Cancel" method="post">
+                                            <input type="hidden" name="orderId" value="@Model.UserOrderHeader.Id" />
+                                            <button type="submit" class="btn btn-danger form-control">Cancel Order</button>
+                                        </form>
 
                                     }
+
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

@@ -337,17 +337,20 @@ namespace ECommerce.Controllers
         }
 
 
-
         [HttpPost]
-        public IActionResult Canceled(int orderId)
+        public IActionResult Cancel(int orderId)
         {
-            var updateorder = _context.UserOrderHeaders
-                .FirstOrDefault(x => x.Id == orderId);
+            Console.WriteLine("Reached Cancel Action with Order ID: " + orderId);
 
+            var updateorder = _context.UserOrderHeaders.FirstOrDefault(x => x.Id == orderId);
             if (updateorder != null)
             {
-                if(updateorder.PaymentState == UpdateOrderState.PaymentStatusPaid)
+                Console.WriteLine("Found Order with ID: " + orderId);
+
+                if (updateorder.PaymentState == UpdateOrderState.PaymentStatusPaid)
                 {
+                    Console.WriteLine("Order is paid, proceeding with refund...");
+
                     var options = new RefundCreateOptions
                     {
                         Reason = RefundReasons.RequestedByCustomer,
@@ -355,15 +358,22 @@ namespace ECommerce.Controllers
                     };
                     var service = new RefundService();
                     Refund refund = service.Create(options);
+
                     updateorder.OrderState = UpdateOrderState.OrderStatusCanceled;
                     updateorder.PaymentState = UpdateOrderState.PaymentStatusRefunded;
                 }
 
                 _context.Update(updateorder);
                 _context.SaveChanges();
+                Console.WriteLine("Order canceled and changes saved.");
+            }
+            else
+            {
+                Console.WriteLine("Order not found with ID: " + orderId);
             }
 
             return RedirectToAction("OrderDetails", new { orderId = orderId });
         }
+
     }
 }

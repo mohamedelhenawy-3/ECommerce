@@ -1,79 +1,79 @@
 ﻿
-@model IEnumerable<ModelClasses.Product>
-<h2>Create Product</h2>
+ @model IEnumerable<ModelClasses.Product>
+ <h2>Create Product</h2>
 
 
-@{
-    ViewData["Title"] = "Product List";
-}
+ @{
+     ViewData["Title"] = "Product List";
+ }
 
-<style>
-    .custom-btn-color {
-        background-color: #4A628A; /* Set the background color */
-        border-color: #4A628A; /* Set the border color */
-        color: white; /* Set the text color to white for better contrast */
-    }
+ <style>
+     .custom-btn-color {
+         background-color: #4A628A; /* Set the background color */
+         border-color: #4A628A; /* Set the border color */
+         color: white; /* Set the text color to white for better contrast */
+     }
 
-        .custom-btn-color:hover {
-            background-color: #B9E5E8; /* Slightly darker shade for hover effect */
-            border-color: #7AB2D3;
-        }
-</style>
-<!-- Button to navigate to Create view -->
-<a asp-action="Create" class="btn btn-success mb-3 custom-btn-color">Create New Product</a>
+         .custom-btn-color:hover {
+             background-color: #B9E5E8; /* Slightly darker shade for hover effect */
+             border-color: #7AB2D3;
+         }
+ </style>
+ <!-- Button to navigate to Create view -->
+ <a asp-action="Create" class="btn btn-success mb-3 custom-btn-color">Create New Product</a>
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Description</th>
-            <th>Category</th>
-            <th>Image</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var product in Model)
-        {
-                <tr>
-                    <td>@product.Name</td>
-                    <td>@product.Price</td>
-                    <td>@product.Description</td>
+ <table class="table table-striped">
+     <thead>
+         <tr>
+             <th>Name</th>
+             <th>Price</th>
+             <th>Description</th>
+             <th>Category</th>
+             <th>Image</th>
+             <th>Actions</th>
+         </tr>
+     </thead>
+     <tbody>
+         @foreach (var product in Model)
+         {
+                 <tr>
+                     <td>@product.Name</td>
+                     <td>@product.Price</td>
+                     <td>@product.Description</td>
 
-                    <td>
-                    @if (product.Category != null)
-                    {
-                        @product.Category.Name
-                    }
-                    else
-                    {
-                        <p>No Category</p>
-                    }
-                    </td>
+                     <td>
+                     @if (product.Category != null)
+                     {
+                         @product.Category.Name
+                     }
+                     else
+                     {
+                         <p>No Category</p>
+                     }
+                     </td>
 
-                    <td>
-                    @if (product.ImgUrls != null && product.ImgUrls.Any())
-                    {
-                        var firstImage = product.ImgUrls.FirstOrDefault(); // Get the first image
-                        if (firstImage != null)
-                        {
-                            <img src="~/Images/@firstImage.ImageUrl" alt="Product Image" width="150" height="100" />
-                        }
-                    }
-                    else
-                    {
-                        <p>No Image</p>
-                    }
+                     <td>
+                     @if (product.ImgUrls != null && product.ImgUrls.Any())
+                     {
+                         var firstImage = product.ImgUrls.FirstOrDefault(); // Get the first image
+                         if (firstImage != null)
+                         {
+                             <img src="~/Images/@firstImage.ImageUrl" alt="Product Image" width="150" height="100" />
+                         }
+                     }
+                     else
+                     {
+                         <p>No Image</p>
+                     }
 
 
-                    </td>
+                     </td>
 
-                    <td>
-                    <a asp-action="Edit" asp-route-Id="@product.Id" class=" btn btn-primary">Edit</a>
-                     <a href="@Url.Action("Delete", "Product", new { id = product.Id })" class="btn btn-danger">Delete</a>
-                    </td>
-                </tr>
-        }
-    </tbody>
-</table>
+                     <td>
+                     <a asp-action="Edit" asp-route-Id="@product.Id" class=" btn btn-primary">Edit</a>
+                      <a href="@Url.Action("Delete", "Product", new { id = product.Id })" class="btn btn-danger">Delete</a>
+                     </td>
+                 </tr>
+         }
+     </tbody>
+ </table>

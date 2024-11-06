@@ -1,0 +1,114 @@
+﻿@using ModelClasses.ViewModels;
+@model ModelClasses.ViewModels.RegisterViewModel;
+
+@{
+    ViewData["Title"] = "AddAdmin";
+}
+<style>
+    .custom-btn-color {
+        background-color: #4A628A; /* Set the background color */
+        border-color: #4A628A; /* Set the border color */
+        color: white; /* Set the text color to white for better contrast */
+    }
+
+        .custom-btn-color:hover {
+            background-color: #B9E5E8; /* Slightly darker shade for hover effect */
+            border-color: #7AB2D3;
+        }
+</style>
+<section class="h-100 bg-white">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+                <div class="card card-registration my-4">
+                    <div class="row g-0">
+                        <div class="col-xl-6 d-none d-xl-block">
+                            <img src="https://cdn.pixabay.com/photo/2021/12/27/19/28/e-commerce-6898102_1280.png" alt="Sample photo" class="img-fluid" alt="Sample photo" class="img-fluid"
+                                 style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;
+                height: 700px; width: 800px; max-width: 100%;
+                object-fit: cover; margin: auto;" />
+                        </div>
+
+
+                        <div class="col-xl-6">
+                            <div class="card-body p-md-5 text-black">
+                                <h3 class="mb-5 text-uppercase">Create New Admin</h3>
+
+                                <form asp-action="AddAdmin" asp-controller="Account" method="post">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <label asp-for="Email" class="form-label"></label>
+                                        <input asp-for="Email" class="form-control form-control-lg" />
+                                        <span asp-validation-for="Email" class="text-danger"></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div data-mdb-input-init class="form-outline">
+                                                <label asp-for="FirstName" class="form-label"></label>
+                                                <input asp-for="FirstName" class="form-control form-control-lg" />
+                                                <span asp-validation-for="FirstName" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div data-mdb-input-init class="form-outline">
+                                                <label asp-for="LastName" class="form-label"></label>
+                                                <input asp-for="LastName" class="form-control form-control-lg" />
+                                                <span asp-validation-for="LastName" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div data-mdb-input-init class="form-outline">
+                                                <label asp-for="UserName" class="form-label"></label>
+                                                <input asp-for="UserName" class="form-control form-control-lg" />
+                                                <span asp-validation-for="UserName" class="text-danger"></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div data-mdb-input-init class="form-outline">
+                                                <label asp-for="Password" class="form-label"></label>
+                                                <input asp-for="Password" class="form-control form-control-lg" />
+                                                <span asp-validation-for="Password" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div data-mdb-input-init class="form-outline">
+                                                <label asp-for="ConfirmPassword" class="form-label"></label>
+                                                <input asp-for="ConfirmPassword" class="form-control form-control-lg" />
+                                                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <label asp-for="Address" class="form-label"></label>
+                                        <input asp-for="Address" class="form-control form-control-lg" />
+                                        <span asp-validation-for="Address" class="text-danger"></span>
+                                    </div>
+
+
+                                    <div class="d-flex justify-content-end pt-3">
+                                
+                                        <input type="submit" value="AddAdmin" class="btn btn-warning btn-lg ms-2 custom-btn-color" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
