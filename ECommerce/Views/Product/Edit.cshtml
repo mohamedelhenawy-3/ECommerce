@@ -3,93 +3,117 @@
 @{
     ViewData["Title"] = "Edit Product";
 }
+
 <style>
     .custom-btn-color {
-        background-color: #4A628A; /* Set the background color */
-        border-color: #4A628A; /* Set the border color */
-        color: white; /* Set the text color to white for better contrast */
+        background-color: #4A628A;
+        border-color: #4A628A;
+        color: white;
     }
 
         .custom-btn-color:hover {
-            background-color: #B9E5E8; /* Slightly darker shade for hover effect */
-            border-color: #7AB2D3;
+            background-color: #3A5170;
+            border-color: #3A5170;
         }
+
+    .image-list-item {
+        margin: 0 10px 10px 0;
+        border: 1px solid #ddd;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .image-list-item img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+    .form-group label {
+        font-weight: bold;
+    }
+
+    .form-container {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    }
 </style>
-<h2 class="text-center text-info">Edit Product</h2>
 
-<form asp-action="Edit" method="post" enctype="multipart/form-data">
-    <!-- Hidden field for Product Id -->
-    <input type="hidden" asp-for="Product.Id" />
+<div class="container mt-5">
+    <h2 class="text-center text-info mb-4">Edit Product</h2>
+    <div class="form-container mx-auto" style="max-width: 600px;">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <!-- Hidden field for Product Id -->
+            <input type="hidden" asp-for="Product.Id" />
 
-    <!-- Product Name -->
-    <div class="form-group">
-        <label asp-for="Product.Name" class="control-label"></label>
-        <input asp-for="Product.Name" class="form-control" />
-        <span asp-validation-for="Product.Name" class="text-danger"></span>
-    </div>
+            <!-- Product Name -->
+            <div class="form-group">
+                <label asp-for="Product.Name" class="control-label">Product Name</label>
+                <input asp-for="Product.Name" class="form-control" placeholder="Enter product name" />
+                <span asp-validation-for="Product.Name" class="text-danger"></span>
+            </div>
 
-    <!-- Product Price -->
-    <div class="form-group">
-        <label asp-for="Product.Price" class="control-label"></label>
-        <input asp-for="Product.Price" class="form-control" />
-        <span asp-validation-for="Product.Price" class="text-danger"></span>
-    </div>
+            <!-- Product Price -->
+            <div class="form-group">
+                <label asp-for="Product.Price" class="control-label">Product Price</label>
+                <input asp-for="Product.Price" class="form-control" placeholder="Enter product price" />
+                <span asp-validation-for="Product.Price" class="text-danger"></span>
+            </div>
 
-    <!-- Product Description -->
-    <div class="form-group">
-        <label asp-for="Product.Description" class="control-label"></label>
-        <textarea asp-for="Product.Description" class="form-control"></textarea>
-        <span asp-validation-for="Product.Description" class="text-danger"></span>
-    </div>
+            <!-- Product Description -->
+            <div class="form-group">
+                <label asp-for="Product.Description" class="control-label">Product Description</label>
+                <textarea asp-for="Product.Description" class="form-control" rows="3" placeholder="Enter product description"></textarea>
+                <span asp-validation-for="Product.Description" class="text-danger"></span>
+            </div>
 
-    <!-- Product Category -->
-    <div class="form-group">
-        <label asp-for="Product.CategoryId" class="control-label">Category</label>
-        <select asp-for="Product.CategoryId" class="form-control" asp-items="Model.CategoriesList"></select>
-        <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
-    </div>
+            <!-- Product Category -->
+            <div class="form-group">
+                <label asp-for="Product.CategoryId" class="control-label">Category</label>
+                <select asp-for="Product.CategoryId" class="form-control" asp-items="Model.CategoriesList">
+                    <option value="">Select a category</option>
+                </select>
+                <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+            </div>
 
-    <!-- Current Product Images -->
-    <div class="form-group">
-        <label class="control-label">Current Product Images</label>
-        <div>
-            @if (Model.Product.ImgUrls != null && Model.Product.ImgUrls.Any())
-            {
-                <ul class="list-unstyled" style="display: flex; flex-wrap: wrap; padding-left: 0;">
-                    @foreach (var image in Model.Product.ImgUrls)
+            <!-- Current Product Images -->
+            <div class="form-group">
+                <label class="control-label">Current Product Images</label>
+                <div class="d-flex flex-wrap">
+                    @if (Model.Product.ImgUrls != null && Model.Product.ImgUrls.Any())
                     {
-                        <li style="margin-right: 10px; margin-bottom: 10px;">
-                            <!-- إضافة هامش للفصل بين الصور -->
-                            <img src="~/Images/@image.ImageUrl" alt="Product Image" width="150" height="100" />
-                        </li>
+                        @foreach (var image in Model.Product.ImgUrls)
+                        {
+                            <div class="image-list-item">
+                                <img src="~/Images/@image.ImageUrl" alt="Product Image" />
+                            </div>
+                        }
                     }
-                </ul>
-            }
-            else
-            {
-                <p>No images available for this product.</p>
-            }
-        </div>
-    </div>
+                    else
+                    {
+                        <p>No images available for this product.</p>
+                    }
+                </div>
+            </div>
 
+            <!-- Upload New Product Images -->
+            <div class="form-group">
+                <label asp-for="Images" class="control-label">Upload New Product Images</label>
+                <input type="file" asp-for="Images" class="form-control" multiple />
+                <span asp-validation-for="Images" class="text-danger"></span>
+            </div>
 
-    <!-- Upload New Product Images -->
-    <div class="form-group">
-        <label asp-for="Images" class="control-label">Upload New Product Images</label>
-        <input type="file" asp-for="Images" class="form-control" multiple />
-        <span asp-validation-for="Images" class="text-danger"></span>
+            <!-- Submit button -->
+            <div class="text-center mt-4">
+                <input type="submit" value="Save Changes" class="btn custom-btn-color btn-lg" />
+            </div>
+        </form>
     </div>
-
-    <!-- Submit button -->
-    <div class="row">
-        <div class="col-12 text-center">
-            <input type="submit" value="Save Changes" class="btn btn-primary btn-sm custom-btn-color" />
-        </div>
-    </div>
-</form>
+</div>
 
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    @await Html.PartialAsync("_ValidationScriptsPartial")
 }

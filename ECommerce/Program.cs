@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using ModelClasses;
 using Stripe;
 using NuGet.Protocol.Core.Types;
+using ECommerce.Repository.UserRepo;
 
 namespace ECommerce
 {
@@ -32,8 +33,10 @@ namespace ECommerce
             })
              .AddEntityFrameworkStores<AppDBContext>()
             .AddDefaultTokenProviders();
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             builder.Services.AddScoped<ICategoryRepository, CategoryRepositorycs>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
             builder.Services.AddSession(options =>
             {
@@ -61,9 +64,14 @@ namespace ECommerce
             app.UseSession();
             app.UseAuthorization();
 
+           
             app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+    name: "user",
+    pattern: "User/{action=Index}",
+    defaults: new { controller = "User" });
+            app.MapControllerRoute(
+               name: "default",
+               pattern: "{controller=Home}/{action=Index}");
 
             app.Run();
         }

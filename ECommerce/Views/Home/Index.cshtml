@@ -34,6 +34,7 @@
                                 <a asp-controller="Home" asp-action="Index" asp-route-SearchByCategory="@category.Name">@category.Name</a>
                             </li>
                         }
+                      
                     </ul>
                 </div>
             </div>
@@ -138,8 +139,9 @@
                                 }
                             </div>
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">@product.Name</h5>
+                           
                                 <p class="card-text">@product.Description</p>
+                              
                                 <!-- Add to Cart Button Styled -->
                                 <a asp-controller="UserCart" asp-action="AddToCart" asp-route-ProductId="@product.Id" class="btn btn-primary mt-auto custom-btn-color">Add to Cart</a>
                             </div>

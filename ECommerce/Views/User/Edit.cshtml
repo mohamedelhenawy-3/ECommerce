@@ -1,0 +1,74 @@
+﻿@model ModelClasses.ApplicationUser
+
+@{
+    ViewData["Title"] = "Edit User";
+}
+
+<style>
+    .custom-btn-color {
+        background-color: #4A628A;
+        border-color: #4A628A;
+        color: white;
+    }
+
+    .custom-btn-color:hover {
+        background-color: #3A5170;
+        border-color: #3A5170;
+    }
+
+    .form-group label {
+        font-weight: bold;
+    }
+
+    .form-container {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+</style>
+
+<div class="container mt-5">
+    <h2 class="text-center text-info mb-4">Edit User</h2>
+    <div class="form-container mx-auto" style="max-width: 600px;">
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+            <!-- Editable fields for the user -->
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label">First Name</label>
+                <input asp-for="FirstName" class="form-control" placeholder="Enter first name" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label">Last Name</label>
+                <input asp-for="LastName" class="form-control" placeholder="Enter last name" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input asp-for="Email" class="form-control" placeholder="Enter email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label">Phone Number</label>
+                <input asp-for="PhoneNumber" class="form-control" placeholder="Enter phone number" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+
+            <input type="hidden" asp-for="Id" /> <!-- Hidden ID field -->
+            <!-- Submit and Cancel buttons -->
+            <div class="text-center mt-4">
+                <input type="submit" value="Save" class="btn custom-btn-color btn-lg" />
+                <a asp-action="Index" class="btn btn-secondary btn-lg ml-2">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @Html.Partial("_ValidationScriptsPartial")
+}

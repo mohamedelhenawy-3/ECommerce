@@ -47,31 +47,32 @@
                     <ul class="navbar-nav flex-grow-1">
                         @if (User.IsInRole("Admin"))
                         {
-                            <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="DashBoard" asp-action="DashBoard">Board</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="adminOptionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Admin Options
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="adminOptionsDropdown">
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="DashBoard" asp-action="DashBoard">Board</a></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Category" asp-action="Category">Categorys</a></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Account" asp-action="AddAdmin">AddAdmin</a></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Role" asp-action="New">AddRole</a></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Product" asp-action="Index">Product</a></li>
+                                    <li><a class="dropdown-item" asp-controller="User" asp-action="Index">Users</a></li>
+                                </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="Category" asp-action="Category">Category</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="Account" asp-action="AddAdmin">AddAdmin</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="Role" asp-action="New">AddRole</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="Product" asp-action="Index">Product</a>
-                            </li>
-
                         }
+
                         @if (User.Identity.IsAuthenticated)
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                             </li>
-                             <li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link text-white" asp-area="" asp-controller="Order" asp-action="OrderHistory">OrderHistory</a>
                             </li>
+                           
+
+
                         }
                         else
                         {
@@ -82,8 +83,6 @@
                                 <a class="nav-link text-white" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
                             </li>
                         }
-                  
-
                     </ul>
 
                     @if (User.Identity.IsAuthenticated)
@@ -92,26 +91,31 @@
                             <span class="navbar-text text-white me-2">
                                 Welcome, @User.Identity.Name!
                             </span>
-                            @if (HttpContextAccessor.HttpContext.Session.GetInt32(CartCount.sessionCount) != null)
+
+                            <!-- Show cart icon only for non-admin users -->
+                            @if (!User.IsInRole("Admin"))
                             {
-                                <li class="nav-item me-3">
-                                    <a asp-controller="UserCart" asp-action="ShowCart" class="nav-link text-white">
-                                        @{
-                                            var count = HttpContextAccessor.HttpContext.Session.GetInt32(CartCount.sessionCount);
-                                        }
-                                        <i class="fas fa-shopping-cart"></i>
-                                        <span class="badge bg-secondary">@count</span>
-                                    </a>
-                                </li>
-                            }
-                            else
-                            {
-                                <li class="nav-item me-3">
-                                    <a asp-controller="UserCart" asp-action="ShowCart" class="nav-link text-white">
-                                        <i class="fas fa-shopping-cart"></i>
-                                        <span class="badge black-badge">0</span>
-                                    </a>
-                                </li>
+                                @if (HttpContextAccessor.HttpContext.Session.GetInt32(CartCount.sessionCount) != null)
+                                {
+                                    <li class="nav-item me-3">
+                                        <a asp-controller="UserCart" asp-action="ShowCart" class="nav-link text-white">
+                                            @{
+                                                var count = HttpContextAccessor.HttpContext.Session.GetInt32(CartCount.sessionCount);
+                                            }
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span class="badge bg-secondary">@count</span>
+                                        </a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li class="nav-item me-3">
+                                        <a asp-controller="UserCart" asp-action="ShowCart" class="nav-link text-white">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span class="badge black-badge">0</span>
+                                        </a>
+                                    </li>
+                                }
                             }
 
                             <li class="nav-item">
