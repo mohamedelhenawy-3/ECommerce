@@ -1,7 +1,7 @@
 # E-Commerce Project
 
 ## Overview
-This is an e-commerce application built using **ASP.NET Core MVC**. The project provides features for managing products, categories, user authentication, shopping carts, and more.
+This is a fully-featured e-commerce application built with **ASP.NET Core MVC**. It includes product management, user authentication, a shopping cart, and secure payment integration using **Stripe**.
 
 ---
 
@@ -10,8 +10,10 @@ This is an e-commerce application built using **ASP.NET Core MVC**. The project 
 - Product listing with categories and filtering.
 - Shopping cart functionality with quantity management.
 - File upload and image handling for products.
+- Integration with **Stripe** for secure payments.
+- Payment status tracking in the system.
 - Responsive design using Bootstrap.
-- Integration with SQL Server for data storage.
+- SQL Server integration for data storage.
 
 ---
 
@@ -20,6 +22,7 @@ This is an e-commerce application built using **ASP.NET Core MVC**. The project 
 - **Frontend:** Razor Views, Bootstrap
 - **Database:** SQL Server
 - **ORM:** Entity Framework Core
+- **Payments:** Stripe API
 - **Version Control:** Git and GitHub
 
 ---
@@ -30,8 +33,9 @@ This is an e-commerce application built using **ASP.NET Core MVC**. The project 
 1. [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 2. [Visual Studio Code](https://code.visualstudio.com/) or [Visual Studio 2022](https://visualstudio.microsoft.com/)
 3. [SQL Server](https://www.microsoft.com/en-us/sql-server/)
+4. [Stripe Account](https://stripe.com/)
 
 ### Setup Instructions
-1. Clone the repository:https://github.com/mohamedelhenawy-3/ECommerce.git
+1. Clone the repository:
    ```bash
-  
+   git clone https://github.com/YourUsername/YourRepository.git
